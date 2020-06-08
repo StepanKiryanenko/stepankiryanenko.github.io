@@ -1,0 +1,225 @@
+#wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow:column;
+}
+caption{
+	caption-side: top;
+	margin: 16px auto;
+}
+table{
+	width: 50%;
+	border: 1px solid red;
+	border-spacing:0;
+	margin: 0 auto;
+}
+table td{
+	border: 1px solid green;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+}
+table tr:nth-child(odd) td:nth-child(even){
+    background-color:black;
+    border: 1px solid green;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+}
+table tr:nth-child(even) td:nth-child(odd){
+    background-color:black;
+}
+th{
+	width: 50px;
+	height: 50px;
+}
+ul{
+	padding-left: 0;
+}
+li{
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	border: 1px solid blue;
+	margin-left: -5px;
+    margin-bottom: -17px;
+    text-align: center;
+}
+ .white li:nth-child(n+1):nth-child(-2n+8){
+	background-color: black;
+}
+.black li:nth-child(n+2):nth-child(odd){
+	background-color: black;
+}
+.A,.B,.C,.D,.E,.F,.G,.H{
+	background-color: grey;
+}
+.One li:nth-child(n+1){
+	background-color: grey;
+	padding-top: 1px;
+}
+div p{
+	text-align: center;
+	margin: 0 auto;
+}
+div{
+	display: block;
+	position: ;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+@media screen and (max-device-width: 812px){
+  	#wrapper{
+  	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow:column;
+}
+caption{
+	caption-side: top;
+	margin: 16px auto;
+}
+table{
+	width: 100%;
+	border: 1px solid red;
+	border-spacing:0;
+	margin: 0 auto;
+}
+table td{
+	border: 1px solid green;
+	width: 10%;
+	height: 10%;
+	padding: 0;
+}
+table tr:nth-child(odd) td:nth-child(even){
+    background-color:black;
+    border: 1px solid green;
+	width: 10%;
+	height: 10%;
+	padding: 0;
+}
+table tr:nth-child(even) td:nth-child(odd){
+    background-color:black;
+}
+th{
+	border: 1px solid green;
+	width: 33px;
+	height: 33px;
+}
+div{
+	display: block;
+	position: ;
+	max-width: 100%;
+	border: 1px solid red;
+	margin: 0 auto;
+	padding: 0;
+}
+ul{margin: 0 auto;
+	padding-left: 10px;
+padding-right: 10px;}
+li{
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	border: 1px solid blue;
+	margin-left: -5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+ .white li:nth-child(n+1):nth-child(-2n+8){
+	background-color: black;
+}
+.black li:nth-child(n+2):nth-child(odd){
+	background-color: black;
+}
+.A,.B,.C,.D,.E,.F,.G,.H{
+	background-color: grey;
+	padding-left: 0;
+}
+.One li:nth-child(n+1){
+	background-color: grey;
+	padding-top: 1px;
+}
+div p{
+	text-align: center;
+}
+}
+@media screen and (min-device-width: 768px){
+  	#wrapper{
+  	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow:column;
+}
+caption{
+	caption-side: top;
+	margin: 16px auto;
+}
+table{
+	width: 50%;
+	border: 1px solid red;
+	border-spacing:0;
+	margin: 0 auto;
+}
+table td{
+	border: 1px solid green;
+	width: 10%;
+	height: 10%;
+	padding: 0;
+}
+table tr:nth-child(odd) td:nth-child(even){
+    background-color:black;
+    border: 1px solid green;
+	width: 10%;
+	height: 10%;
+	padding: 0;
+}
+table tr:nth-child(even) td:nth-child(odd){
+    background-color:black;
+}
+th{
+	border: 1px solid green;
+	width: 37px;
+	height: 37px;
+}
+div{
+	display: block;
+	position: ;
+	max-width: 100%;
+	border: 1px solid red;
+	margin: 0 auto;
+	padding: 0;
+}
+ul{margin: 0 auto;
+	padding-left: 10px;
+padding-right: 10px;}
+li{
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+	border: 1px solid blue;
+	margin-left: -5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+ .white li:nth-child(n+1):nth-child(-2n+8){
+	background-color: black;
+}
+.black li:nth-child(n+2):nth-child(odd){
+	background-color: black;
+}
+.A,.B,.C,.D,.E,.F,.G,.H{
+	background-color: grey;
+	padding-left: 0;
+}
+.One li:nth-child(n+1){
+	background-color: grey;
+	padding-top: 1px;
+}
+div p{
+	text-align: center;
+}
+}
