@@ -1,0 +1,2468 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+	width: 100%;
+}
+header li{
+	list-style: none;
+	display: inline-block;
+}
+a{
+	text-decoration: none !important;
+}
+/*начало секции socialAcon */
+#socialAcon .contact li{
+	list-style: none;
+	padding: 0 6px;
+}
+
+#socialAcon{
+	font-size: 14px;
+    padding: 0 17px;
+    line-height: 60px;
+    vertical-align: top;
+    background-color: #242332;
+    color: #99a9b5;
+}
+#socialAcon a{
+	font-size: 14px;
+    padding: 0;
+    line-height: 60px;
+    vertical-align: top;
+    background-color: #242332;
+    color: #99a9b5;
+}
+#socialAcon p{
+	float: right;
+	font-size: 13px;
+    padding: 0;
+    line-height: 60px;
+    vertical-align: top;
+    background-color: #242332;
+    color: #99a9b5;
+    margin-bottom: 0;
+}
+#socialAcon .number a{
+	float: right;
+	font-size: 13px;
+    padding: 0;
+    line-height: 60px;
+    vertical-align: top;
+    background-color: #242332;
+    color: #99a9b5;
+}
+#socialAcon .contact a{
+	font-size: 13px;
+    padding: 0;
+    line-height: 60px;
+    vertical-align: top;
+    background-color: #242332;
+    color: #99a9b5;
+    cursor: pointer;
+}
+.itemIcon li{
+	padding: 0 7px;
+}
+#socialAcon a:hover{
+	color: #dd1b3c;
+	transition-duration: 3s;
+}
+#socialAcon .itemIcon a:hover{
+	color: #dd1b3c;
+	transition-duration: 1s;
+}
+ul{
+	margin: 0;
+}
+.primary-navigation button{
+	display: none;
+}
+#primary-navigation .mainMenu{
+	text-align: left;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 30px 0;
+    font-size: 14px;
+    margin: 0 13px;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
+}
+#menu .topmenu .mainMenu:hover{
+	color: #00bcd4 !important;
+	transform: 1s !important;
+	text-decoration: none !important;
+	font-family: "source sans pro", sans-serif;
+}
+#primary-navigation li i{
+	font-size: 20px;
+}
+#primary-navigation li a{
+	font-size: 14px;
+	color: #3c3950;
+}
+#menu-item-25{
+	border: 2px solid black;
+	white-space: nowrap;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    padding: 5px 20px !important;
+    font-weight: 900;
+}
+#primary-navigation .submenu{
+	position: absolute;
+    background-color: #f4f6f7;
+    top: 76px;
+    width: 300px;
+    height: auto;
+    display: grid;
+    z-index: 10;
+    padding: 0;
+    border-top: 5px solid opacity;
+}
+#primary-navigation .submenu li{
+	position: relative;
+	padding: 15px 10px;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "source sans pro", sans-serif;
+	text-decoration: none;
+    border-bottom: 1px solid #c1cdda;
+    margin: 0 0;
+    border-left: 3px solid transparent;
+    display: none;
+}
+#primary-navigation .submenu li:hover{
+	background-color: #fff;
+	border-left: 3px solid #00bcd4;
+	color: #3c3950;
+}
+#primary-navigation li:hover .submenu li {
+	display: block;
+	visibility: visible;
+	transform: scale(1);
+}
+.menuDrop{
+	position: absolute;
+	top: -9999em;
+	width: 100%;
+	left: 100%;
+	opacity: 0;
+	background-color: #fff;
+	transition: 0.5s opacity;
+	font-family: "source sans pro", sans-serif;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+}
+.menuDrop li:hover {
+	background-color:#5f727f !important; 
+	color: #fff;
+}
+.menuList{
+	position: relative;
+}
+.menuList:hover .menuDrop{
+	opacity: 1;
+	top: 0;
+	color: #fff;
+}
+.menuList::after{
+	content: ">";
+	position: absolute;
+	right: 10px;
+	font-size: 20px;
+	color: #3c3950
+}
+.menuListSecond::after{
+	content: ">";
+	position: absolute;
+	right: 10px;
+	font-size: 20px;
+	color: #000;
+}
+.menuListSecond{
+	position: relative;
+}
+.secondMenu{
+	position: absolute;
+	top: -9999em;
+	width: 100%;
+	left: 100%;
+	opacity: 0;
+	background-color: #fff;
+	transition: 0.5s opacity;
+	font-family: "source sans pro", sans-serif;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+}
+.menuListSecond:hover .secondMenu {
+	opacity: 1;
+	top: 0;
+}
+.basket{
+	position: relative;
+}
+.basket:hover .purchases{
+	opacity: 1;
+	top: 85px;
+	left:-110px;
+}
+.purchases{
+	position: absolute;
+    width: auto;
+    padding: 10px 30px;
+    top: -9999em;
+    background-color: white;
+    z-index: 10;
+    max-height: 412px;
+    overflow-y: auto;
+    font-family: "source sans pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #99a9b5;
+    transition: 0.5s opacity;
+    opacity: 0;
+    text-transform: none;
+}
+.search{
+	position: relative;
+}
+.search:active .minisearch{
+	top: 65px;
+}
+.minisearch{
+    display: none;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: opacity .5s,-webkit-transform .5s;
+    transition: opacity .5s,transform .5s background-color: #fff;
+    position: absolute;
+    top: 65px;
+    left: -110px;
+    padding: 20px;
+    width: 280px;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    z-index: 5;
+    background-color: #fff;
+    border: 1px solid #dfe5e8;
+ }
+ .sf-input{
+ 	background-color: #f4f6f7;
+ 	border-bottom: 1px solid #dfe5e8;
+    border-left: 1px solid #dfe5e8;
+    border-right: 1px solid #dfe5e8;
+    border-top: 1px solid #dfe5e8;
+    width: 100%;
+    font-family: "source sans pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    border-radius: 4px;
+    padding-right: 40px;
+    outline: none;
+ }
+.sf-submit-icon{
+	position: absolute;
+    right: 10px;
+    padding: 10px 0;
+    width: 40px;
+    height: 40px;
+}
+.search.minisearch.sf-submit-icon.fa-search:hover{
+	color: #000
+}
+.minisearch .sf-submit-icon:before {
+    display: block;
+    font-family: thegem-icons;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-right: 5px;
+    padding-right: 3px;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    height: 40px;
+}
+.sf-submit{
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+#menu .site-logo{
+	margin: 9px 0px;
+} 
+
+/*начало секции link*/
+#link .Block1{
+	padding-left: 80px !important;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	background-color: #242332;
+	border: 1px solid #574e58;
+	color: #fff;
+}
+#link .Block2{
+	padding-left: 80px !important;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	background-color: #363545;
+	border: 1px solid #574e58;
+	color: #fff;
+}
+#link .Block1:hover{
+	background-color: #000;
+	transition-duration: 3s;
+}
+#link .Block2:hover{
+	background-color: #000;
+	transition-duration: 3s;
+}
+#link .icon{
+	position: absolute;
+    top: 50px;
+    right: 20px;
+}
+#link .title-h5{
+	margin-top: 120px;
+	margin-bottom: 70px;
+}
+#link .title-h5 span:first-child{
+	color: #dd1b3c;
+	font-weight: 400;
+	font-family: montserrat ultralight;
+	text-transform: uppercase;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: .05em;
+    font-size: 19px;
+}
+#link .title-h5 span{
+	color: #fff;
+	letter-spacing: .05em;
+	line-height: 30px;
+	font-size: 19px;
+	font-weight: 700;
+	font-family: montserrat;
+	text-transform: uppercase;
+}
+/*Конец секции link*/
+
+/*начало секции SLIDER */
+#slider .headerText{
+	position: absolute;
+	top: 40%;
+	left: 35%;
+}
+#slider .headerText h2{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 45px;
+	line-height: 45px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    font-family: "Montserrat", sans-serif;
+    visibility: inherit;
+}
+#slider .headerText .text{
+	white-space: nowrap;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    text-align: inherit;
+}
+#slider .headerText p{
+	white-space: normal;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #8c8c90;
+    letter-spacing: 0px;
+    font-family: "Source Sans Pro", sans-serif;
+    visibility: inherit;
+    text-align: inherit;
+    max-height: none;
+    opacity: 1;
+    margin-top: 20px;
+}
+#slider .headerText button{
+    z-index: 8;
+    white-space: nowrap;
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    background-color: rgb(221, 27, 60);
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    text-align: inherit;
+    margin: 20px auto;
+    padding: 18px 38px;
+    letter-spacing: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
+    text-transform: uppercase;
+}
+#slider .headerText button:hover{
+	background-color: rgb(120, 20, 58);
+}
+#menu .topmenu .menu-toggle{
+	display: none;
+	border: none;
+    width: 36px;
+    height: 30px;
+    text-indent: 100%;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background: 0 0;
+    padding: 0;
+}
+.menu-line-1{
+	height: 3px;
+    width: 26px;
+    left: 5px;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background: #99a9b5;
+    top: 6px;
+}
+.menu-line-2{
+	height: 3px;
+    width: 26px;
+    left: 5px;
+    top: 13px;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background: #99a9b5;
+}
+.menu-line-3{
+	top: 20px;
+	height: 3px;
+    width: 26px;
+    left: 5px;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background: #99a9b5;
+}
+/*конец секции SLIDER */
+
+/*начало секции vcRow*/
+main #vcRow{
+	background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/logistics-dotted-map.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important; 
+    padding-bottom: 80px;
+}
+main #vcRow h3{
+	color: #3c3950;
+	text-align: center;
+	letter-spacing: .05em;
+	line-height: 69px;
+	font-size: 50px;
+	font-weight: 700;
+	font-family: "montserrat", sans-serif;
+	text-transform: uppercase;
+	margin-top: 120px;
+	margin-bottom: 45px;
+}
+main #vcRow p{
+	text-align: center;
+    display: block;
+    max-width: 850px;
+    margin: auto;
+    color: #5f727f;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "source sans pro", sans-serif;
+    margin-bottom: 50px;
+}
+main #vcRow .block1{
+	width: 30%;
+	background-color: #fff;
+	margin: 60px auto 0 auto;
+	border: 1px solid #dfe5e8;
+	padding: 40px 20px;
+}
+main #vcRow .block1 i{
+	background-color: #efeff3;
+    position: relative;
+    color: #dd1b3c;
+    width: 90px;
+    height: 90px;
+    font-size: 48px;
+    border-radius: 50%;
+    padding: 20px;
+    top: 10px;
+    left: 37%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+main #vcRow .block1 h5{
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(60, 57, 80);
+	transition: all .3s;
+	font-size: 19px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    letter-spacing: .05em;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: "montserrat", sans-serif;
+}
+main #vcRow .line{
+	border-bottom: 1px solid rgb(221, 27, 60);
+    width: 15%;
+    margin: 0 auto;
+}
+main #vcRow .block1 p{
+	color: rgb(95, 114, 127);
+	transition: all .3s;
+	margin-top: 14px;
+	line-height: 25px;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "source sans pro", sans-serif;
+	text-align: center;
+	margin-bottom: 0;
+}
+main #vcRow .block1:hover{
+	background-color: #dd1b3c;
+	transition-duration: 2s;
+	transition-timing-function: ease-out;
+}
+main #vcRow .block1:hover i{
+	background-color: #fff;
+	transition-duration: 2s;
+	transition-timing-function: ease-out;
+}
+main #vcRow .block1:hover h5{
+	color: #fff;
+	transition-duration: 2s;
+	transition-timing-function: ease-out;
+}
+main #vcRow .block1:hover .line{
+	border-bottom: 1px solid #fff;
+    width: 15%;
+    margin: 0 auto;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+main #vcRow .block1:hover p{
+	color: #fff;
+	transition-duration: 2s;
+	transition-timing-function: ease-out;
+}
+/*конец секции vcRow*/
+
+/*начало секции vcRowFluid*/
+main #vcRowFluid .firstBlock{
+	padding-top: 180px !important;
+    padding-left: 80px !important;
+    background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/5_mini.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+main #vcRowFluid .secondBlock{
+	padding-top: 180px !important;
+    padding-left: 80px !important;
+    background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/6_mini.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+main #vcRowFluid .threeBlock{
+	padding-top: 180px !important;
+    padding-left: 80px !important;
+    background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/7_mini.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+#vcRowFluid .light{
+	color: #dd1b3c;
+	font-weight: 400;
+	font-family: montserrat ultralight;
+	text-transform: uppercase;
+    font-size: 19px;
+    line-height: inherit;
+    margin-top: 80px;
+}
+#vcRowFluid .firstBlock h5{
+	color: #fff;
+	font-weight: 400;
+	font-family: montserrat ultralight;
+	text-transform: uppercase;
+    font-size: 32px;
+    line-height: inherit;
+    margin-bottom: 20px;
+}
+#vcRowFluid .firstBlock p{
+	color: #fff;
+	font-weight: 400;
+	font-family: montserrat ultralight;
+	font-size: 16px;
+	margin-bottom: 75px;
+}
+#vcRowFluid .secondBlock h5{
+	color: #000;
+	font-weight: 400;
+	font-family: montserrat ultralight;
+	text-transform: uppercase;
+    font-size: 32px;
+    line-height: inherit;
+    margin-bottom: 20px;
+}
+#vcRowFluid .secondBlock p{
+	color: #000;
+	font-weight: 400;
+	font-family: montserrat ultralight;
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+.threeBlock h5{
+	color: #fff;
+	font-weight: 400;
+	font-family: montserrat ultralight;
+	text-transform: uppercase;
+    font-size: 32px;
+    line-height: inherit;
+    margin-bottom: 20px;
+}
+.threeBlock p{
+	color: #fff;
+	font-weight: 400;
+	font-family: montserrat ultralight;
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+/*конец секции vcRowFluid*/
+
+/*начало секции aboutUs*/
+#aboutUs h2{
+	font-size: 50px;
+    color: #3c3950;
+    line-height: 69px;
+    font-weight: 700;
+    font-family: montserrat;
+    text-transform: uppercase;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+#aboutUs p{
+	font-size: 16px;
+    color: #5f727f;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: source sans pro;
+    text-align: center;
+    margin-bottom: 100px;
+}
+/*конец секции aboutUs*/
+
+/*начало секции tgpliInited */
+#tgpliInited{
+	background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/8_mini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+#tgpliInited .row-fluid{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin: 0 auto;
+}
+#tgpliInited .number{
+	float: left;
+	padding: 0;
+	color: #dd1b3c;
+    font-size: 80px;
+    line-height: 70px;
+    font-weight: 400;
+}
+#tgpliInited .text{
+	display: block;
+    font-weight: 700;
+    color: #fff;
+    font-size: 22px;
+    line-height: 35px;
+    padding-left: 10px;
+}
+.fullwidth-bottom-marker{
+	position: absolute;
+	left: 50%;
+	margin-left: -69px;
+	margin-top: -1px;
+}
+/*конец секции tgpliInited */
+
+/*начало секции numberBox*/
+
+#numberBox .imgBox i{
+	margin-top: 120px;
+	color:#dd1b3c;
+}
+#numberBox .numberBox{
+	font-size: 110px;
+	color:#3c3950; 
+	font-weight: bold;
+	margin-top: 50px;
+}
+#numberBox .text{
+	font-size: 20px;
+	color:#3c3950; 
+	margin-bottom: 50px;
+}
+/*конец секции numberBox*/
+#facts{
+	background-color: #efeff3;
+}
+#facts h2{
+	text-align: center;
+	font-size: 50px;
+	font-weight: 900;
+	margin: 0 auto;
+	margin-top: 100px;
+	color: #3c3950;
+	line-height: 69px;
+	width: 100%;
+}
+#facts h5{
+	text-align: center;
+	font-size: 19px;
+	margin: 0 auto;
+	color: #3c3950;
+	line-height: 69px;
+	width: 100%;
+}
+#facts p{
+	text-align: center;
+    display: block;
+    max-width: 900px;
+    margin: auto;
+    line-height: 25px;
+    color: #5f727f;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+#facts .wpb_wrapper{
+	margin-top: 40px;
+}
+#facts .vc_general{
+	background-color: white;
+    height: 40px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#facts .vc_bar{
+    background-color: rgb(221, 27, 60);
+    display: block;
+    width: 50%;
+    position: relative;
+    display: block;
+    height: 40px;
+    top: -41px;
+    left: 0;
+    border-radius: 3px;
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 40px 40px;
+}
+#facts .vc_label{
+	font-family: 'Montserrat UltraLight';
+	padding: .5em 1em;
+	display: block;
+    position: relative;
+    z-index: 1;
+    letter-spacing: .05em;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*начало секции PRICES*/
+#prices{
+	margin-bottom: 0px !important;
+    background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/10_mini.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding-bottom: 100px;
+}
+
+#prices h2{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 50px;
+	line-height: 69px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 150px;
+	margin-bottom: 100px;
+}
+#prices .pricesBox{
+	color: #fff;
+	border: 1px solid #585861;
+	width: 390px;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+#prices .pricesBox h5{
+	color: #fff;
+	font-size: 36px;
+	line-height: 38px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+#prices .pricesBox span{
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    line-height: 38px;
+    font-size: 24px;
+    margin-top: 10px 0;
+}
+#prices .pricesBox li{
+	list-style: none;
+	text-align: center;
+	padding: 16px 10px;
+}
+#prices .pricesBox li:nth-child(even){
+	background: rgba(244, 246, 247, 0.11);
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+#prices .pricesBox header{
+	width: 100%;
+	text-align: center;
+	background-color: #dd1b3c;
+	padding: 50px 0;
+}
+#prices .pricesBox button{
+	border: 2px solid #f90101;
+    padding: 5px 20px;
+    background: none;
+    color: #f90101;
+}
+#prices .pricesBox button span{
+	color: #dd1b3c;
+	font-size: 15px;
+	margin-right: 10px;
+}
+#prices .pricesBox button:hover{
+	border: 2px solid #f90101;
+    padding: 5px 20px;
+    background: #f90101;
+    color: #fff;
+    transition-duration: 3s;
+}
+#prices .pricesContainer{
+	padding: 0 220px;
+}
+
+/*конец секции Prices*/
+
+
+/*Начало секции Mission */
+#OurMission{
+    margin-bottom: 0px !important;
+    padding-bottom: 110px !important;
+    background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/17_mini.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+#OurMission h2{
+	width: 500px;
+	margin-top: 120px;
+	margin-bottom: 50px;
+	color: #3c3950;
+	text-transform: uppercase;
+	font-size: 50px;
+	margin-left: -15px;
+    letter-spacing: .05em;
+    line-height: 53px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+#OurMission p{
+	color: #5f727f;
+	line-height: 25px;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    margin-left: -15px;
+    margin-bottom: 60px;
+}
+#OurMission .informBox{
+	border: 1px solid #cccccc;
+}
+#OurMission .informBox p{
+	font-size: 16px;
+	padding-top: 8px;
+    padding-bottom: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+#OurMission .number {
+	width: 50px;
+    height: 50px;
+    line-height: 48px;
+    float: left;
+    position: relative;
+    font-size: 156%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    overflow: hidden;
+    margin-left: 0px;
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 7px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.mainText{
+	padding: 0;
+}
+/*Конец секции Mission*/
+
+/*Начало секции OverThen*/
+#OverThen{
+	margin-bottom: 0px !important;
+    background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/16_mini.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding-top: 100px !important;
+    padding-bottom: 60px;
+}
+#OverThen h2{
+	color: #3c3950;
+    margin-bottom: 85px;
+    margin-top: 0;
+    letter-spacing: .05em;
+    line-height: 53px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin: 1.2em 0;
+    display: block;
+
+}
+#OverThen h2 span {
+	color: #e12545;
+	line-height: 90px;
+	font-size: 80px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	margin: 1.4em 0;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+#OverThen .icon i{
+	width: 70px;
+    height: 70px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 23px 21px;
+    font-size: 23px;
+}
+#OverThen .icon  span .fa-tv{
+	color: #fff;
+}
+#OverThen .icon span .fa-trophy{
+	color: #fff;
+}
+#OverThen .information h3{
+	margin-top: 50px;
+	color: #e12545;
+	letter-spacing: .05em;
+	line-height: 30px;
+	font-size: 19px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+#OverThen .information p{
+	margin-top: 15px;
+	color: #5f727f;;
+	letter-spacing: .05em;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 25px;
+	margin-bottom: 74px;
+}
+/*конец секции OverThen*/
+
+/*начало секции OurClients*/
+
+#OurClients h2{
+	color: #3c3950;
+	margin-bottom: 0;
+	box-sizing: border-box;
+	text-align: center;
+	letter-spacing: .05em;
+	line-height: 69px;
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 15% auto 5% auto;
+}
+#OurClients p{
+	text-align: center;
+    display: block;
+    max-width: 850px;
+    margin: auto;
+    color: #5f727f;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*конец секции OurClients*/
+
+/*начало секции formControl*/
+#formControl .container-fliud{
+	margin: 0 15px;
+}
+#formControl .container{
+	padding: 0 30px;
+}
+#formControl .fotos{
+	background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/11_mini.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+#formControl .text{
+	background-color: #dd1b3c !important; 
+}
+#formControl .text h2{
+	color: #ffffff;
+	text-align: center;
+	letter-spacing: .05em;
+	line-height: 53px;
+	font-size: 36px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin-top: 80px;
+    margin-bottom: 50px;
+}
+#formControl input{
+	display: block;
+    width: 100%;
+    height: 60px;
+    background: none;
+    border: 1px solid white;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 45px;
+    border-radius: 3px;
+    position: relative;
+    outline: none;
+}
+#formControl input::-webkit-input-placeholder { color: #fff; }
+#formControl input::-moz-placeholder { color: #fff; }
+
+#formControl .text .fa-user{
+	color: #fff;
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	font-size: 20px;
+}
+#formControl .text .fa-envelope{
+	color: #fff;
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	font-size: 20px;
+}
+#formControl select{
+	display: block;
+    width: 100%;
+    margin: 20px auto;
+    height: 60px;
+    background: none;
+    padding: 15px;
+    color: #fff;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    position: relative;
+}
+#formControl .text .fa-angle-down{
+	background-color: #dd1b3c;
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    top: 40px;
+    width: 30px;
+    height: 20px;
+    right: 20px;
+    font-size: 20px;
+}
+#formControl option{
+	color: #000;
+}
+#formControl textarea{
+	display: block;
+    width: 100%;
+    margin: 20px auto;
+    background: none;
+    padding: 15px;
+    color: #fff;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+#formControl textarea::-webkit-input-placeholder { color: #fff; }
+#formControl textarea::-moz-placeholder { color: #fff; }
+
+#formControl .wpcf7-submit{
+	width: auto;
+    text-align: center;
+    margin: 15px auto;
+    display: block;
+    background: #2d2a40;
+    height: 50px;
+    line-height: 30px;
+    padding: 10px 40px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-family: montserrat;
+    position: relative;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: 0;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border-radius: 3px;
+}
+#formControl .wpcf7-submit:hover{
+	background: #fff;
+    color: #2d2a40;
+    transition-duration: 3s;
+}
+#formControl .invisibleBlock{
+	width: 100%;
+	border: 2px solid #f7e700;
+	text-align: center;
+	padding: 5px 0;
+	margin: 80px 0;
+	/*display: none;*/
+}
+#formControl .invisibleBlock p{
+	margin-bottom: 0;
+	color: #5f727f;
+	/*конец секции formControl*/
+}
+
+/*начало секции ourTeam*/
+#ourTeam h3{
+	color: #3c3950;
+	margin-bottom: 0;
+	box-sizing: border-box;
+	text-align: center;
+	letter-spacing: .05em;
+	line-height: 69px;
+	font-size: 50px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin: 100px auto 40px auto;
+}
+#ourTeam p{
+	text-align: center;
+    display: block;
+    max-width: 850px;
+    margin: auto;
+    color: #5f727f;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#ourTeam .imageBlock{
+	margin: 30px 5px;
+	border:1px solid #dfe5e8;
+	position: relative;
+	padding: 30px 20px !important;
+	border-bottom: 5px solid #dd1b3c;
+	width: 370px;
+} 
+#ourTeam .imageBlock img{
+	margin: 0 auto 30px 0px;
+	border-radius: 50%;
+}
+#ourTeam .imageBlock h5{
+	color: #a2a1ac;
+	margin: 0 0 30px;
+	line-height: 37px;
+	font-size: 24px;
+	font-weight: 300;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: left;
+}
+#ourTeam .imageBlock p{
+	color: #99a9b5;
+	font-size: .875em;
+    margin-bottom: 3px;
+    margin: 0 ;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: left;
+}
+#ourTeam .imageBlock a{
+	color: #dd1b3c;
+	text-decoration: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: left;
+	font-size: 25px;
+}
+#ourTeam .imageBlock .number{
+	margin: 5px 0;
+	cursor: pointer;
+}
+#ourTeam .fa-envelope{
+	font-size: 32px;
+	margin: 0;
+	color: #99a9b5;
+}
+#ourTeam .fa-envelope:hover{
+	color: #000;
+	transition-duration: 3s;
+}
+#ourTeam ol li{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #dddde6;
+    border: 1px solid #dddde6;
+}
+#ourTeam .imageBlock .itemSocialList{
+	width: 25px;
+    height: 25px;
+    background-color: #b6c6c8;
+    border-radius: 50%;
+    color: #fff;
+    margin: 0 5px;
+    text-align: center;
+    padding: 6px;
+    font-size: 13px;
+}
+#ourTeam .imageBlock .itemSocialList:hover{
+	background-color: #dd1b3c;
+	transition-duration: 3s;
+}
+/*конец секции ourTeam*/
+
+/*начало секции responsibility*/
+#responsibility{
+	position: relative;
+}
+#responsibility{
+	position: relative;
+	background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/12_mini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% -304.425px;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+}
+#responsibility h2{
+	width: 100%;
+	color:#fff;
+	box-sizing: border-box;
+	text-align: center;
+	letter-spacing: .05em;
+	line-height: 53px;
+	font-size: 36px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	margin-top: 150px;
+	margin-bottom: 10px !important;
+	position: relative;
+}
+#responsibility h3{
+	width: 100%;
+	margin-bottom: 0;
+	color: #dd1b3c;
+	line-height: 69px;
+	font-size: 50px;
+	text-align: center;
+	font-weight: 700;
+	box-sizing: border-box;
+	text-align: center;
+	letter-spacing: .05em;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 70px;
+	position: relative;
+}
+#responsibility p{
+	position: relative;
+    display: block;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    display: block;
+    max-width: 850px;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 37px;
+    font-size: 24px;
+    font-family: 'Source Sans Pro';
+}
+#responsibility button{
+    border-radius: 3px;
+    background-color: rgb(221, 27, 60);
+    color: rgb(255, 255, 255);
+    letter-spacing: .05em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 25px;
+    font-size: 19px;
+    margin: 70px auto 200px auto;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    position: relative;
+}
+/*конец секции responsibility*/
+
+/*начало секции new*/
+#news{
+	padding-bottom: 100px;
+}
+#news h2{
+	color: #3c3950;
+	text-align: center;
+	letter-spacing: .05em;
+	line-height: 69px;
+	font-size: 50px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin: 100px auto;
+}
+#news img{
+	width: 100%;
+	height: auto;
+}
+#news .data a{
+	color: #3c3950;
+	transition: all .3s;
+	text-decoration: none;
+	cursor: pointer;
+	letter-spacing: .05em;
+	line-height: 38px;
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	box-sizing: border-box;
+}
+#news .data a:hover{
+	color: #dd1b3c;
+	transition-duration: 3s;
+}
+#news .data{
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+#news p{
+	line-height: 25px;
+	font-size: 16px;
+	text-align: left;
+	color: #5f727f;;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#news span{
+	background-color: #b6c6c8;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	padding: 5px 7px;
+	border-radius: 3px;
+	font-size: 20px;
+	cursor: pointer;
+}
+#news span:hover{
+	background-color: #5f727f;
+	transition-duration: 3s;
+}
+#news .icon{
+	position: absolute;
+	bottom: 0;
+}
+#news .icon a{
+	border: 2px solid #dd1b3c;
+    margin: 20px;
+    padding: 7px 24px;
+    color: #dd1b3c;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background: 0 0;
+    line-height: 26px;
+    letter-spacing: .05em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+#news .icon a:hover{
+	color: #fff;
+    background: #dd1b3c;
+    text-decoration: none;
+    transition-duration: 3s;
+}
+#news .hoverefect{
+	position: relative;
+	opacity: 0;
+	transition: all 0.1s ease-out 0.3s;
+}
+#news .hoverefect:hover{
+	opacity: 1;
+	transition-duration: 3s;
+}
+#news .hoverefect .shadow{
+	background-color: #fff;
+    width: 100%;
+    position: absolute;
+    display: block;
+    height: 247px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+#news .hoverefect .list{
+	position: absolute;
+    top: 33%;
+    left: 40%;
+    font-size: 40px;
+    background: none;
+}
+#news .hoverefect i{
+	background-color: rgb(42, 47, 49);
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+}
+/*конец секции new*/
+
+/*начало секции contact*/
+#contact{
+	width: 100%;
+}
+#contact .name{
+	padding: 70px;
+	border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    padding-left: 60px !important;
+    background-color: #242332 !important;
+    border-right-color: #61606c !important;
+    border-right-style: solid !important;
+    border-top-color: #61606c !important;
+    border-top-style: solid !important;
+}
+#contact .address{
+	background-color: #363545 !important;
+	padding: 70px;
+	border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    padding-left: 60px !important;
+    border-right-color: #61606c !important;
+    border-right-style: solid !important;
+    border-top-color: #61606c !important;
+    border-top-style: solid !important;
+}
+#contact .phones{
+	padding: 70px;
+	border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    padding-left: 60px !important;
+    background-color: #242332 !important;
+    border-right-color: #61606c !important;
+    border-right-style: solid !important;
+    border-top-color: #61606c !important;
+    border-top-style: solid !important;
+}
+#contact .hours{
+	background-color: #363545 !important;
+	padding: 70px;
+	border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    padding-left: 60px !important;
+    border-right-color: #61606c !important;
+    border-right-style: solid !important;
+    border-top-color: #61606c !important;
+    border-top-style: solid !important;
+}
+#contact .name img{
+	margin:0 0 50px 0;
+}
+#contact .name p{
+	color: #99a9b5;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-bottom: 50px;
+}
+#contact h2 span{
+	color: #dd1b3c;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: .05em;
+}
+#contact h2{
+	color: #fff;
+	font-weight: 700;
+	line-height: 42px;
+	font-size: 28px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-top: 100px;
+}
+#contact p{
+	color: #fff;
+	font-weight: 400;
+	line-height: 25px;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: .05em;
+	margin-bottom: 0;
+}
+#contact .a-map-marker-alt{
+	position: relative;
+}
+#contact .fa-phone, .fa-clock{
+	color: #fff;
+	text-align: right;
+	margin: 0;
+	position: absolute;
+	top: 60px;
+    right: 70px;
+}
+#contact .light{
+	color: #fff;
+    border: 4px solid #fff;
+    width: 45px;
+    height: 45px;
+    padding: 4px 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    position: absolute;
+    top: 60px;
+    right: 70px;
+}
+/*конец секции contact*/
+
+/*начало секции googleMaps*/
+#googleMaps iframe{
+	filter: url(/thegem/wp-content/themes/thegem/css/grayscale.svg#greyscale);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+/*конец секции googleMaps*/
+
+/* начало Секция Footer*/
+footer{
+	background-color: #242332;
+	padding: 40px 0;
+    border-top: 1px solid #313646;
+}
+footer .footer-site-info{
+	font-size: 92.86%;
+	color: #99a9b5;
+}
+footer .footer-site-info a:hover{
+	text-decoration: underline;
+	transition-duration: 3s;
+}
+footer .contact li{
+    display: inline-block;
+    padding: 0 21px;
+    position: relative;
+    line-height: 1;
+    list-style: none;
+}
+footer .itemIcon li{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    margin: 0 5px;
+    line-height: 16px;
+}
+footer .itemIcon li{
+    padding: 0;
+}
+footer a{
+	font-size: 92.86%;
+	color: #99a9b5;
+}
+footer a:hover{
+	color: #dd1b3c;
+	text-decoration: none;
+	transition-duration: 1s;
+}
+ /*конец секции footer*/
+
+
+.modalIcon1, .modalIcon2, .modalIcon3{
+	position: absolute;
+	text-align: center;
+    background: #dfe5e8;
+    display: none;
+    left: 18px;
+    bottom: 0;
+    margin: 50px auto;
+    width: 250px;
+    border-radius: 25px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 25px;
+    white-space: nowrap;
+}
+ .modalIcon1 li{
+	padding: 0 5px; 
+	list-style: none;
+	display: inline-block;
+	font-size: 16px;
+}
+.modalIcon2 li{
+	padding: 0 5px; 
+	list-style: none;
+	display: inline-block;
+	font-size: 16px;
+}
+.modalIcon3 li{
+	padding: 0 5px; 
+	list-style: none;
+	display: inline-block;
+	font-size: 16px;
+}
+.modalIcon1 a{
+	color: #99a9b5;
+}
+.modalIcon2 a{
+	color: #99a9b5;
+}
+.modalIcon3 a{
+	color: #99a9b5;
+}
+.modalIcon1 .sharing-styled-arrow{
+	position: absolute;
+    bottom: -100px;
+    height: 100px;
+    width: 50px;
+    left: -30px;
+    -ms-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 100% 0;
+    -o-transform: rotate(-90deg) scale(.3);
+    -ms-transform: rotate(-90deg) scale(.3);
+    -moz-transform: rotate(-90deg) scale(.3);
+    transform: rotate(-90deg) scale(.3);
+}
+.modalIcon2 .sharing-styled-arrow{
+	position: absolute;
+    bottom: -100px;
+    height: 100px;
+    width: 50px;
+    left: -30px;
+    -ms-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 100% 0;
+    -o-transform: rotate(-90deg) scale(.3);
+    -ms-transform: rotate(-90deg) scale(.3);
+    -moz-transform: rotate(-90deg) scale(.3);
+    transform: rotate(-90deg) scale(.3);
+}
+.modalIcon3 .sharing-styled-arrow{
+	position: absolute;
+    bottom: -100px;
+    height: 100px;
+    width: 50px;
+    left: -30px;
+    -ms-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 100% 0;
+    -o-transform: rotate(-90deg) scale(.3);
+    -ms-transform: rotate(-90deg) scale(.3);
+    -moz-transform: rotate(-90deg) scale(.3);
+    transform: rotate(-90deg) scale(.3);
+}
+.sharing-styled-arrow path{
+	fill: #dfe5e8;
+}
+.sub-menu{
+	position: absolute;
+	width: 500px;
+	height: auto;
+}
+.styled{
+    display: block;
+}
+.menu_opened{
+    display: block;
+}
+.menu-toggle{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	#wrapper{
+	width: 100%;
+	margin: 0 auto;
+    }
+    #socialAcon{
+    	display: none;
+    }
+    .primary-navigation button{
+        display: block !important;
+        position: absolute !important;
+        top: 20px;
+        right: 0;
+}
+#slider .headerText p{
+    font-size: 12px;
+}
+#slider .headerText h2{
+    font-size: 30px;
+}
+   
+	#primary-menu{
+		display: none;
+}
+footer{
+	text-align: center;
+}
+footer .footer-site-info{
+	text-align: center;
+	padding: 20px 0;
+}
+footer .itemIcon{
+	text-align: center !important;
+	padding: 20px 0;
+}
+footer a{
+	font-size: 100%;
+}
+#googleMaps{
+	width: 100%;
+}
+#contact{
+	width: 100%;
+}
+#news{
+	width: 100%;
+}
+#news h2{
+	color: #3c3950;
+	text-align: center;
+	letter-spacing: .05em;
+	line-height: 69px;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin: 20px auto;
+}
+#responsibility .fullwidth-block-inner{
+	position: relative;
+	background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/12_mini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: none;
+}
+#ourTeam .imageBlock{
+	margin: 0 auto;
+	width: 90%;	
+}
+#ourTeam h3{
+	font-size: 30px;
+	margin: 50px auto 40px auto;
+}
+#prices .pricesContainer{
+	padding: 0 30px;
+}
+#prices .pricesBox{
+	margin: 15px auto;
+}
+#OurMission .mainText{
+	padding: 0 30px;
+}
+#OurMission h2{
+	width: auto;
+    color: #3c3950;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 50px auto 50px auto;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 53px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+#OurMission p{
+	text-align: center;
+	margin-bottom: 30px;
+}
+#OurMission .informBox p{
+	text-align: justify;
+}
+#prices h2{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#facts h2{
+	font-size: 40px;
+	margin-top: 50px;
+}
+#facts h5{
+	line-height: 40px;
+}
+#facts .vc_bar{
+    top: -36px;
+}
+#facts .vc_label{
+	font-size: 11px;
+}
+#numberBox .numberBox{
+	font-size: 65px;
+}
+#formControl input{
+	margin: 10px auto;
+}
+#formControl .text .fa-user{
+	top: 30px;
+}
+#formControl .text .fa-envelope{
+	top: 30px;
+}
+#aboutUs h2{
+	font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#tgpliInited .text{
+	padding-left: 127px;
+	font-size: 20px;
+}
+main #vcRow .block1{
+	width: 90%;
+	background-color: #fff;
+	margin: 60px auto 0 auto;
+	border: 1px solid #dfe5e8;
+	padding: 40px 20px;
+}
+#responsibility h3{
+	font-size: 30px;
+}
+#slider .headerText{
+	left: 22%;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    #wrapper{
+    width: 100%;
+    margin: 0 auto;
+    }
+    #socialAcon{
+        display: block;
+    }
+    .primary-navigation button{
+        display: block !important;
+        position: absolute !important;
+        top: 20px;
+        right: 0;
+}
+    #primary-menu{
+        display: none;
+}
+footer{
+    text-align: center;
+}
+footer .footer-site-info{
+    text-align: center;
+    padding: 20px 0;
+}
+footer .itemIcon{
+    text-align: center !important;
+    padding: 20px 0;
+}
+footer a{
+    font-size: 100%;
+}
+#googleMaps{
+    width: 100%;
+}
+#contact{
+    width: 100%;
+}
+#news{
+    width: 100%;
+}
+#news h2{
+    color: #3c3950;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 69px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+#responsibility .fullwidth-block-inner{
+    position: relative;
+    background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/12_mini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: none;
+}
+#ourTeam .imageBlock{
+    margin: 0 auto;
+    width: 50%; 
+}
+#ourTeam h3{
+    font-size: 30px;
+    margin: 50px auto 40px auto;
+}
+#prices .pricesContainer{
+    padding: 0 30px;
+}
+#prices .pricesBox{
+    margin: 15px auto;
+}
+#OurMission .mainText{
+    padding: 0 30px;
+}
+#OurMission h2{
+    width: auto;
+    color: #3c3950;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 50px auto 50px auto;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 53px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+#OurMission p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#OurMission .informBox p{
+    text-align: justify;
+}
+#prices h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#facts h2{
+    font-size: 40px;
+    margin-top: 50px;
+}
+#facts h5{
+    line-height: 40px;
+}
+#facts .vc_bar{
+    top: -36px;
+}
+#facts .vc_label{
+    font-size: 11px;
+}
+#numberBox .numberBox{
+    font-size: 65px;
+}
+#formControl input{
+    margin: 10px auto;
+}
+#formControl .text .fa-user{
+    top: 30px;
+}
+#formControl .text .fa-envelope{
+    top: 30px;
+}
+#aboutUs h2{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#tgpliInited .text{
+    padding-left: 127px;
+    font-size: 20px;
+}
+main #vcRow .block1{
+    width: 100%;
+    background-color: #fff;
+    margin: 60px auto 0 auto;
+    border: 1px solid #dfe5e8;
+    padding: 40px 20px;
+}
+#responsibility h3{
+    font-size: 30px;
+}
+#slider .headerText{
+    left: 22%;
+}
+main #vcRow .block1 i{
+    left: 45%;
+}
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+    #wrapper{
+    width: 100%;
+    margin: 0 auto;
+    }
+    #socialAcon{
+        display: block;
+    }
+    #socialAcon .number a{
+    float: right;
+    font-size: 11px;
+    padding: 27px 36px;
+    line-height: 0px;
+    vertical-align: top;
+    background-color: #242332;
+    color: #99a9b5;
+}
+#socialAcon p {
+    float: right;
+    font-size: 11px;
+    padding: 24px 0;
+    line-height: 12px;
+    vertical-align: top;
+    background-color: #242332;
+    color: #99a9b5;
+    margin-bottom: 0;
+    }
+    .itemIcon li {
+    padding: 0 6px;
+}
+    .primary-navigation button{
+        display: none !important;
+        position: absolute !important;
+        top: 20px;
+        right: 0;
+}
+    #primary-menu{
+        display: block;
+}
+footer{
+    text-align: center;
+}
+footer .footer-site-info{
+    text-align: center;
+    padding: 20px 0;
+}
+footer .itemIcon{
+    text-align: center !important;
+    padding: 20px 0;
+}
+footer a{
+    font-size: 100%;
+}
+footer .contact{
+    padding: 20px 0;
+}
+#googleMaps{
+    width: 100%;
+}
+#contact{
+    width: 100%;
+}
+#news{
+    width: 100%;
+}
+#news h2{
+    color: #3c3950;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 69px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+#responsibility .fullwidth-block-inner{
+    position: relative;
+    background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/12_mini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: none;
+}
+#ourTeam .imageBlock{
+    margin: 0 auto;
+    width: 100%; 
+}
+#ourTeam .imageBlock a{
+    font-size: 16px;
+}
+#ourTeam .imageBlock .itemSocialList {
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+    font-size: 9px;
+}
+#ourTeam .imageBlock {
+    padding: 30px 76px !important;
+}
+#ourTeam h3{
+    font-size: 30px;
+    margin: 50px auto 40px auto;
+}
+#prices .pricesContainer{
+    padding: 0 30px;
+}
+#prices .pricesBox{
+    margin: 15px auto;
+}
+#OurMission .mainText{
+    padding: 0 30px;
+}
+#OurMission h2{
+    width: auto;
+    color: #3c3950;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 50px auto 50px auto;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 53px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+#OurMission p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#OurMission .informBox p{
+    text-align: justify;
+}
+#prices h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#facts h2{
+    font-size: 40px;
+    margin-top: 50px;
+}
+#facts h5{
+    line-height: 40px;
+}
+#facts .vc_bar{
+    top: -36px;
+}
+#facts .vc_label{
+    font-size: 11px;
+}
+#numberBox .numberBox{
+    font-size: 65px;
+}
+#formControl input{
+    margin: 10px auto;
+}
+#formControl .text .fa-user{
+    top: 30px;
+}
+#formControl .text .fa-envelope{
+    top: 30px;
+}
+#aboutUs h2{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#tgpliInited .text{
+    padding-left: 127px;
+    font-size: 20px;
+}
+main #vcRow .block1{
+    width: 40%;
+    background-color: #fff;
+    margin: 60px auto 0 auto;
+    border: 1px solid #dfe5e8;
+    padding: 40px 20px;
+}
+#responsibility h3{
+    font-size: 30px;
+}
+#slider .headerText{
+    left: 22%;
+}
+main #vcRow .block1 i{
+    left: 37%;
+}
+#primary-navigation .mainMenu{
+    margin: 0 8px;
+ }
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px){
+    #wrapper{
+    width: 100%;
+    margin: 0 auto;
+    }
+    #socialAcon{
+        display: block;
+    }
+    .primary-navigation button{
+        display: none !important;
+        position: absolute !important;
+        top: 20px;
+        right: 0;
+}
+    #primary-menu{
+        display: block;
+}
+footer{
+    text-align: center;
+}
+footer .footer-site-info{
+    text-align: center;
+    padding: 20px 0;
+}
+footer .itemIcon{
+    text-align: center !important;
+    padding: 20px 0;
+}
+footer a{
+    font-size: 100%;
+}
+footer .contact{
+    padding: 20px 0;
+}
+#googleMaps{
+    width: 100%;
+}
+#contact{
+    width: 100%;
+}
+#news{
+    width: 100%;
+}
+#news h2{
+    color: #3c3950;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 69px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+#responsibility .fullwidth-block-inner{
+    position: relative;
+    background-image: url(https://codex-themes.com/thegem/wp-content/uploads/2017/08/12_mini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: none;
+}
+#ourTeam .imageBlock{
+    margin: 0 50px;
+    width: 100%; 
+}
+#ourTeam h3{
+    font-size: 30px;
+    margin: 50px auto 40px auto;
+}
+#prices .pricesContainer{
+    padding: 0 30px;
+}
+#prices .pricesBox{
+    margin: 15px auto;
+}
+#OurMission .mainText{
+    padding: 0 30px;
+}
+#OurMission h2{
+    width: auto;
+    color: #3c3950;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 50px auto 50px auto;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 53px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+#OurMission p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#OurMission .informBox p{
+    text-align: justify;
+}
+#prices h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#facts h2{
+    font-size: 40px;
+    margin-top: 50px;
+}
+#facts h5{
+    line-height: 40px;
+}
+#facts .vc_bar{
+    top: -36px;
+}
+#facts .vc_label{
+    font-size: 11px;
+}
+#numberBox .numberBox{
+    font-size: 65px;
+}
+#formControl input{
+    margin: 10px auto;
+}
+#formControl .text .fa-user{
+    top: 30px;
+}
+#formControl .text .fa-envelope{
+    top: 30px;
+}
+#aboutUs h2{
+    font-size: 30px;
+    margin: 50px auto 30px auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+#tgpliInited .text{
+    padding-left: 127px;
+    font-size: 20px;
+}
+main #vcRow .block1{
+    width: 45%;
+    background-color: #fff;
+    margin: 60px auto 0 auto;
+    border: 1px solid #dfe5e8;
+    padding: 40px 20px;
+}
+#responsibility h3{
+    font-size: 30px;
+}
+#slider .headerText{
+    left: 22%;
+}
+main #vcRow .block1 i{
+    left: 40%;
+}
+#OurClients h2{
+    margin: 8% auto 5% auto;
+}
+#ourTeam .imageBlock h5{
+    font-size: 22px;
+   }
+#ourTeam .imageBlock .itemSocialList{
+    margin: 0 0;
+   }
+}
