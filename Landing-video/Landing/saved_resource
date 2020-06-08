@@ -1,0 +1,166 @@
+let idbKeyval = (function (exports) {
+    'use strict';
+
+    class Store {
+        constructor(dbName = 'keyval-store', storeName = 'keyval') {
+            this.storeName = storeName;
+            this._dbp = new Promise((resolve, reject) => {
+                const openreq = indexedDB.open(dbName, 1);
+                openreq.onerror = () => reject(openreq.error);
+                openreq.onsuccess = () => resolve(openreq.result);
+                // First time setup: create an empty object store
+                openreq.onupgradeneeded = () => {
+                    openreq.result.createObjectStore(storeName);
+                };
+            });
+        }
+
+        _withIDBStore(type, callback) {
+            return this._dbp.then(db => new Promise((resolve, reject) => {
+                const transaction = db.transaction(this.storeName, type);
+                transaction.oncomplete = () => resolve();
+                transaction.onabort = transaction.onerror = () => reject(transaction.error);
+                callback(transaction.objectStore(this.storeName));
+            }));
+        }
+    }
+
+    let store;
+
+    function getDefaultStore() {
+        if (!store)
+            store = new Store();
+        return store;
+    }
+
+    function get(key, store = getDefaultStore()) {
+        let req;
+        return store._withIDBStore('readonly', store => {
+            req = store.get(key);
+        }).then(() => req.result);
+    }
+
+    function set(key, value, store = getDefaultStore()) {
+        return store._withIDBStore('readwrite', store => {
+            store.put(value, key);
+        });
+    }
+
+    function del(key, store = getDefaultStore()) {
+        return store._withIDBStore('readwrite', store => {
+            store.delete(key);
+        });
+    }
+
+    function clear(store = getDefaultStore()) {
+        return store._withIDBStore('readwrite', store => {
+            store.clear();
+        });
+    }
+
+    function keys(store = getDefaultStore()) {
+        const keys = [];
+        return store._withIDBStore('readonly', store => {
+            // This would be store.getAllKeys(), but it isn't supported by Edge or Safari.
+            // And openKeyCursor isn't supported by Safari.
+            (store.openKeyCursor || store.openCursor).call(store).onsuccess = function () {
+                if (!this.result)
+                    return;
+                keys.push(this.result.key);
+                this.result.continue();
+            };
+        }).then(() => keys);
+    }
+
+    exports.Store = Store;
+    exports.get = get;
+    exports.set = set;
+    exports.del = del;
+    exports.clear = clear;
+    exports.keys = keys;
+
+    return exports;
+
+}({}));
+
+let formatDate = (date) => {
+    let d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+
+    return [year, month, day].join('-');
+};
+
+let isPushEnabled = !1;
+let MegaPush = {
+    init: function (e) {
+        localStorage.getItem("MegaToken9") || MegaPush.subscribe(e)
+    }, install: function (e) {
+        navigator.serviceWorker.register("mega-sw9.js?rev=62&sid=9", {
+            updateViaCache: 'all',
+        }).then(() => {
+            e.granted();
+            MegaPush.push_updateSubscription(e);
+        }, n => {
+            e.denied()
+        })
+    }, subscribe: function (e) {
+        "click" === e.type ? e.button ? document.getElementById(e.button).onclick = function () {
+            MegaPush.push_subscribe(e)
+        } : document.getElementsByTagName("body")[0].onclick = function () {
+            MegaPush.push_subscribe(e)
+        } : "over" === e.type ? e.button ? document.getElementById(e.button).onmouseover = function () {
+            MegaPush.push_subscribe(e)
+        } : document.getElementsByTagName("body")[0].onmouseover = function () {
+            MegaPush.push_subscribe(e)
+        } : MegaPush.push_subscribe(e)
+    }, generateToken: function () {
+        if (localStorage.getItem("MegaToken9")) return localStorage.getItem("MegaToken9");
+        {
+            let e = Math.floor(88888888888 * Math.random() + 11111111111);
+            idbKeyval.set("MegaToken9", e);
+            localStorage.setItem("MegaToken9", e);
+            return e;
+        }
+    }, urlBase64ToUint8Array: function (e) {
+        const n = (e + "=".repeat((4 - e.length % 4) % 4)).replace(/\-/g, "+").replace(/_/g, "/"), t = window.atob(n), r = new Uint8Array(t.length);
+        for (let e = 0; e < t.length; ++e) r[e] = t.charCodeAt(e);
+        return r
+    }, push_subscribe: function (e) {
+        Notification.requestPermission().then(function (n) {
+            "granted" === n ? (MegaPush.install(e), localStorage.setItem("MegaPid", e.pid), idbKeyval.set("MegaPid", e.pid), idbKeyval.set("MegaS1", formatDate(Date.now())), navigator.serviceWorker.ready.then(e => e.pushManager.subscribe({userVisibleOnly: !0, applicationServerKey: MegaPush.urlBase64ToUint8Array("BAAqBeYEggtWzkSYfFeQEqPAVkiQOz0RUAz3smAsx18dKqWa0SHAflKnHIPVPqQ8\/U30P+DgEkaltebIo9nXye0=")})).then(n => MegaPush.push_sendSubscriptionToServer(n, "POST", e, "new")).then(e => e).catch(e => {
+                "denied" === Notification.permission ? console.warn("Notifications are denied by the user.") : console.error("Impossible to subscribe to push notifications", e)
+            })) : e.denied()
+        })
+    }, push_updateSubscription: function (e) {
+        navigator.serviceWorker.ready.then(e => e.pushManager.getSubscription()).then(n => {
+            if (n) return MegaPush.push_sendSubscriptionToServer(n, "POST", e.pid, "update")
+        }).then(e => e).catch(e => {
+            console.error("Error when updating the subscription", e)
+        })
+    }, push_sendSubscriptionToServer: function (e, n, t, r) {
+        const o = e.getKey("p256dh"), i = e.getKey("auth"), u = (new Date).getTimezoneOffset();
+            return fetch("https://" + "workersimkf.com" + "/code/subscribe/", {
+            method: n,
+            body: JSON.stringify({
+                sid: 9,
+                type: r,
+                timestamp: Math.floor(Date.now() / 1e3),
+                lang: navigator.language || navigator.userLanguage,
+                tz: 0 === u ? 0 : -u,
+                tzName: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                pid: t.pid,
+                uid: MegaPush.generateToken(),
+                endpoint: e.endpoint,
+                key: o ? btoa(String.fromCharCode.apply(null, new Uint8Array(o))) : null,
+                token: i ? btoa(String.fromCharCode.apply(null, new Uint8Array(i))) : null
+            })
+        }).then(() => e).then(function () {
+            t.subscribed()
+        })
+    }
+};
