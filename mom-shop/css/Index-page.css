@@ -1,0 +1,1740 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 100%;
+	padding: 0 15px;
+}
+header li{
+	list-style: none;
+	display: inline-block;
+}
+ul{
+	padding: 0;
+	margin-bottom: 0 !important;
+}
+#menu nav li{
+	padding: 10px 20px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #282727;
+	font-family: "Lato";
+	font-weight: 900;
+	text-transform: uppercase;
+}
+#menu nav li:after{
+	content: url(../Images/icondroopmenu.png);
+    position: relative;
+    left: 10px;
+}
+#contacts img{
+	width: 13px;
+	height: 13px;
+	margin: 0 5px;
+}
+#contacts a{
+	color: #a8a8a8;
+	text-decoration:none;
+	font-size: 14px;
+}
+#menu{
+	padding: 20px 0;
+}
+.menuLeft li:first-child{
+	padding-right: 20px;
+}
+.menuLeft li:nth-child(n+2){
+	padding: 0 20px;
+	border-left: 1px solid #f1f3f3; 
+}
+#contacts{
+	border-bottom: 1px solid #efefef;
+    padding: 10px 0;
+}
+p{
+	margin-bottom: 0 !important;
+}
+footer div{
+	padding: 0;
+}
+footer p{
+	font-size: 13px;
+	line-height: 19px;
+	color: #898989;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}
+footer .features{
+	position: relative;
+}
+footer .features div{
+	border-right: 1px solid #efefef;
+}
+footer .features div:nth-child(4){
+	border-right:none;
+}
+footer .features img{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+footer .line{
+	border-bottom: 1px solid #efefef;
+}
+footer .features p{
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	margin-bottom: 0;
+	padding: 20px 0;
+}
+footer .informahion{
+	margin-bottom: 30px;
+}
+footer .informahion h5{
+	margin-top: 70px;
+	margin-bottom: 25px;
+	width: auto;
+	font-size: 20px;
+	line-height: 19px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+footer .informahion p{
+	width: auto;
+	font-size: 13px;
+	line-height: 30px;
+	color: #898989;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+footer .informahion li{
+	display: inline-block;
+	list-style: none;
+	padding: 20px 10px 0 0;
+}
+footer .informahion span{
+	color: #000;
+	font-size: 13px;
+	line-height: 30px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+footer .informahion input{
+	width: 100%;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 1px solid #d7dbdb;
+    font-size: 13px;
+    line-height: 21px;
+    color: #898989;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    margin: 30px auto;
+    outline: none;
+}
+footer .informahion .back{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #ffffff;
+	border: 1px solid #d7dbdb;
+	text-align: center;
+	padding: 6px;
+	margin: 5px 10px auto 0;
+}
+footer .features a{
+	text-decoration: none;
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 19px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
+footer .informahion a{
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 19px;
+	color: #898989;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}
+footer .aboutStore p a:after{
+	content: url(../Images/arrow-blue.png);
+    margin: 5px;
+    position: relative;
+    top: 3px;
+}
+footer .features p a:after{
+	content: url(../Images/arrow-blue.png);
+    margin: 5px;
+    position: relative;
+    top: 3px;
+}
+footer .enterEmail{
+	position: relative;
+}
+footer .enterEmail button{
+	position: absolute;
+	top: 40px;
+	right: 10px;
+	outline: none;
+	background: none;
+	border: none;
+}
+footer .enterEmail button img{
+	width: 25px;	
+}
+main{
+	background-color: #f3f7f7;
+}
+#NewProduct{
+	padding-bottom: 50px;
+}
+#NewProduct h2{
+	font-size: 24px;
+	line-height: 21px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding: 20px 0;
+}
+#NewProduct .productsBox,
+.center .productsBox{
+	padding: 5px;
+	background-color: #fff;
+}
+#NewProduct .productsBox .fotosProducts,
+.center .productsBox .fotosProducts {
+	width: 100%;
+    height: 200px;
+    background-color: aqua;
+    background-size: cover;
+    margin: auto;
+}
+#NewProduct .productsBox h5,
+.center .productsBox h5 {
+	text-transform: uppercase; 
+	display: block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	padding: 10px 10px;
+	margin-bottom: 0;
+}
+#NewProduct .productsBox p,
+.center .productsBox p{
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	padding: 10px 10px;
+	margin-bottom: 0;
+}
+#NewProduct .productsBox span,
+.center .productsBox span{
+	font-size: 14px;
+	letter-spacing: 1px;
+	color:  #37bbec;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	padding: 10px;
+}
+#Sale h2{
+	width: 1172px;
+	font-size: 36px;
+	line-height: 48px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	padding: 30px 0;
+}
+#Sale p{
+	font-size: 16px;
+	line-height: 30px;
+	color: #4e4e4e;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+#Sale button{
+	width: 130px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #37bbec;
+	border: none;
+	margin: 50px auto;
+	font-size: 14px;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	box-shadow: -0.5px -0.866px 0px #2f8aab;
+}
+#Sale .sale-out{
+	position: relative;
+	background-image: url(../Images/Sale.png); 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#Sale .dishes{
+	margin: auto;
+    position: relative;
+    top: -40px; 
+}
+#Sale .sale-out .roundeds{
+	height: 20px;
+    width: 87%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: -90px;
+    z-index: 1;
+    box-shadow: 0px 13px 60px rgba(0,0,0,0.5);
+}
+/*Стили для секции Banners*/
+#Banners{
+	padding: 30px 0;
+}
+#Banners .banner_1{
+	width: 740px;
+	height: 510px;
+	background-color: #fff;
+	margin: 0 auto 10px 5px;
+	padding: 5px;
+	position: relative;
+}
+#Banners .banner_2{
+	width: 360px;
+	height: 510px;
+	background-color: #fff;
+	margin: 0 5px;
+	padding: 5px;
+	position: relative;
+}
+#Banners .banner_3{
+	width: 260px;
+	height: 310px;
+	background-color: #fff;
+	margin: 10px 5px;
+	padding: 5px;
+	position: relative;
+}
+#Banners .banner_4{
+	width: 560px;
+	height: 310px;
+	background-color: #fff;
+	margin: 10px auto;
+	padding: 5px;
+	position: relative;
+}
+#Banners .banner_5{
+	width: 260px;
+	height: 310px; 
+	background-color: #fff; 
+	margin: 10px 5px;
+	padding: 5px;
+	position: relative;
+}
+#Banners .fotos{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #dbdbdb;
+}
+#Banners .banner_1 .text{
+	background-color: #fff;
+    width: auto;
+    text-align: center;
+    position: absolute;
+    left: 15%;
+    bottom: 20px;
+    padding: 20px 30px;
+}
+#Banners .banner_1 .text h3{
+	font-size: 36px;
+	line-height: 24px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	text-align: center;
+	padding: 15px 0;
+}
+#Banners .banner_1 .text p{
+	font-size: 18px;
+	line-height: 24px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	text-align: center;
+}
+#Banners .banner_2 h5{
+	font-size: 36px;
+	line-height: 60px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	padding: 70px 40px 0;
+}
+#Banners .banner_2 p{
+	font-size: 18px;
+    line-height: 27px;
+    color: #282727;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 15px 40px;
+}
+#Banners .banner_3 .text{
+	background-color: #eeeeee;
+    width: auto;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    padding: 10px 20px 20px;
+    margin: 0 12px;
+}
+#Banners .banner_3 .text h5{
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 17px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+}
+#Banners .banner_3 .text p{
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 17px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 0;
+}
+#Banners .banner_4 h5{
+	font-size: 36px;
+	line-height: 17px;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	padding: 40px 0 20px;
+}
+#Banners .banner_4 p{
+	width: 325px;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+#Banners .banner_5 .text{
+	background-color: #f5f5f5;
+    width: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px 20px;
+    margin: 0 23px;
+    display: inline-block;
+}
+#Banners .banner_5 .text .circle{
+	width: 30px;
+    height: 30px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 5px #dadddd;
+}
+#Banners .banner_5 .text h5{
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 17px;
+	color: #282727;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+}
+#Banners a{
+	color: #282727;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+} 
+#Banners a:after{
+	content: url(../Images/arrow-blue.png);
+    margin: 5px;
+    position: relative;
+    top: 3px;
+} 
+#Banners .banner_4 a{
+	color: #fff;
+}
+#Banners .banner_4 a:after{
+	content: url(../Images/arrow-yellow.png);
+	color: yellow;
+    margin: 5px;
+    position: relative;
+    top: 5px;
+}
+/* Конец стилей для секции Banners*/
+
+/*Стили для секции Banners*/
+#topCarousel .controlButton{
+	padding: 30px 400px;
+	background-color: #fff;
+}
+#topCarousel .fotoSlider img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	margin: 0 auto;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 15px !important;
+    height: 15px !important;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #37bbec !important;
+    background-clip: padding-box;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 50% !important;
+    border: 4px solid #000;
+    border-top: 4px solid #000 !important;
+    border-bottom: 4px solid #000 !important;
+}
+#topCarousel .textSlider{
+	position: absolute;
+	top: 35%;
+	left: 25%;
+	text-align: center;
+	background-color: #fff;
+	width: 1000px; 
+}
+#topCarousel .textSlider button{
+	width: 130px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #37bbec;
+	border: none;
+	margin: 50px auto;
+	font-size: 14px;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	box-shadow: -0.5px -0.866px 0px #2f8aab;
+	outline: none;
+}
+#topCarousel .textSlider button a{
+	text-decoration: none;
+	color: inherit;
+}
+#topCarousel .textSlider h4{
+	width: auto;
+	font-size: 36px;
+	letter-spacing: 2px;
+	line-height: 21px;
+	color: #282727;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 80px;
+    margin-bottom: 50px;
+}
+#topCarousel .textSlider p{
+	width: 850px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #282727;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 0;
+	margin: 0 auto;
+}
+#topCarousel .textSlider p{
+	width: auto;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #282727;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 0;
+}
+#topCarousel .textSlider span{
+	text-align: center;
+	text-transform:uppercase;
+	width: 831px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #282727;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+}
+#topCarousel .scrollDown{
+	position: relative;
+	top: 10px;
+}
+#topCarousel .scrollDown img{
+	position: absolute;
+	top:-5px;
+}
+#topCarousel .scrollDown p{
+	padding: 0 30px;
+}
+#topCarousel .scrollDown a{
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 19px;	
+	color: #282727;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	text-decoration: none;
+	margin-right: 20px;
+}
+#topCarousel .scrollDown a img{
+	width: 15px;
+    height: 15px;
+    margin: 10px 6px;
+    transform: rotate(90deg);
+}
+#menu form {
+  position: relative;
+  margin: 0 auto;
+  height: 25px;
+}
+#menu input {
+  	width: 0;
+  	padding: 0 42px 0 15px;
+  	border: none;
+  	border-bottom: 2px solid transparent;
+  	outline: none;
+  	background: transparent;
+  	transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+    z-index: 2;
+    height: 35px;
+	border-radius: 17px;
+	cursor: pointer;
+}
+#menu input:focus {
+  	width: 300px;
+  	z-index: 1;
+ 	background-color: #edefef;
+ 	box-shadow: 0px 1px 1px 0px #d7dbdc;
+}
+#menu button {
+ 	background-color: #edefef;
+ 	border: none;
+ 	height: 36px;
+ 	width: 36px;
+ 	border-radius: 50%;
+ 	position: relative;
+ 	top: 0;
+  	right: 0;
+ 	cursor: pointer;
+ 	box-shadow: 0px 1px 0px #ffffff;
+ 	outline: none;
+}
+#menu button i{
+  	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	box-shadow: 0px 1px 0px #c9cbcb;
+	background-color: #ffffff;
+    text-align: center;
+    padding: 6px;
+}
+.purchases{
+	position: absolute;
+    width: 300px;
+    padding: 10px 30px;
+    top: -9999em;
+    background-color: white;
+    z-index: 10;
+    max-height: 412px;
+    overflow-y: auto;
+    font-family: "source sans pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #99a9b5;
+    transition: 0.5s opacity;
+    opacity: 0;
+    text-transform: none;
+    box-shadow: 0px 1px 1px 0px #d7dbdc;
+}
+.basket{
+	position: relative;
+}
+.basket:hover .purchases{
+	opacity: 1;
+	top: 61px;
+}
+#menu .button li:nth-child(2){
+	padding: 0 10px;
+}
+.submenu{
+	position: absolute;
+    background-color: #f4f6f7;
+    top: 81px;
+    width: 300px;
+    height: auto;
+    display: grid;
+    z-index: 10;
+    padding: 0;
+    font-family: "source sans pro", sans-serif;
+}
+.submenu li{
+	position: relative;
+	padding: 10px 10px !important;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "source sans pro", sans-serif;
+	text-decoration: none;
+    border-bottom: 1px solid #c1cdda;
+    margin: 0 0;
+    border-left: 3px solid transparent;
+    display: none;
+}
+.submenu li:hover{
+	background-color: #fff;
+	color: #3c3950;
+}
+#menu li:hover .submenu li {
+	display: block;
+	visibility: visible;
+	transform: scale(1);
+}
+#menu .submenu{
+	position: absolute;
+    background-color: #fff;
+    top: 30px;
+    width: 300px;
+    height: auto;
+    display: grid;
+    z-index: 10;
+    padding: 0;
+    font-family: "source sans pro", sans-serif;
+    text-align: left;
+}
+#menu .submenu a{
+	color: #000;
+	text-decoration: none;
+}
+.contactsRight li:nth-child(1){
+	border-right: 1px solid #f1f3f3;
+	padding-right: 10px;
+}
+/*меню бургер*/
+.burger-menu{
+	display: none;
+}
+header .list-menu li{
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+.list-menu > li > a{
+  	color: #000;
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+    background-color: #dbdbdb;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid #ebefef;
+    border-radius: 10px;
+}
+.burger-menu .list-menu{
+	position: relative;
+	top: 10px;
+}
+.list-menu > li > a:hover{
+  	background: #fff;
+}
+#btn-menu{
+  	display: none;
+}
+#btn-menu + label{
+  	display: none; 
+  	position: relative;
+  	color: #000; 
+  	height: 20px;
+  	z-index: 1;
+  	cursor: pointer;
+}
+#btn-menu + label:before{
+  	content: '\f0c9';  
+  	display: inline-block;
+  	font-family:'FontAwesome';
+  	font-size: 22px;
+}
+#btn-menu:checked + label:before{
+    content: '\f00d';
+    color: #0e0c0c;
+    border: 1px solid rebeccapurple;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #000;
+}
+/*конец меню бургер*/
+.controlButton .indicators{
+	padding: 10px 30px;
+    position: relative;
+    text-align: center;
+}
+.controlButton .indicators li{
+	list-style: none;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #edefef;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 3px;
+    text-align: center;
+}
+.controlButton .indicators li div{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	box-shadow: 0px 1px 0px #c9cbcb;
+	background-color: #ffffff;
+}
+.controlButton .indicators li div:hover{
+	background-color: #37bbec;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	#wrapper{
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+	}
+	.menuLeft li:nth-child(n+2){
+		padding: 0 9px;
+		border-left: 1px solid #f1f3f3; 
+	}
+	.contactsRight{
+		text-align: center;
+		margin: 10px 0;
+	}
+	.purchases{
+		width: 200px;
+	}
+	.basket:hover .purchases{
+		opacity: 1;
+		top: 61px;
+		right: auto;
+	}
+	.headline .button-back{
+		margin: 13px auto;
+	}
+	.button{
+		text-align: center;
+	}
+	footer .informahion h5{
+		margin-top: 20px;
+	}
+	footer .features div{
+		border-right: none;
+		border-bottom: 1px solid #efefef;
+	}
+	footer .features div:nth-child(4){
+		border-right:none;
+		border-bottom:none;
+	}
+	.menuLeft{
+		text-align: center;
+	}
+	#menu input:focus {
+	  	width: 170px;
+	  	z-index: 1;
+	 	background-color: #edefef;
+	 	box-shadow: 0px 1px 1px 0px #d7dbdc;
+	}
+	#NewProduct .productsBox {
+		margin: 5px 0;
+	}
+	#NewProduct{
+		padding-bottom: 20px;
+	}
+	#NewProduct h2{
+		padding: 20px;
+	}
+	#Sale h2{
+		font-size: 20px;
+		line-height: 48px;
+		padding: 0;
+	}
+	#Sale p{
+		font-size: 10px;
+	}
+	#Sale button{
+		margin: 20px auto;
+	}
+	#Sale .sale-out{
+		background-size: contain;
+	}
+	#Sale .dishes{
+		top: 0; 
+	    width: 100%;
+	}
+	#Sale .sale-out .roundeds{
+		height: 13px;
+	    width: 100%;
+	    margin-top: -105px;
+	}
+	#Banners .banner_5{
+		width: 260px;
+		height: 310px; 
+		background-color: #fff; 
+		margin: 10px auto;
+		padding: 5px;
+		position: relative;
+	}
+	#Banners .banner_4 p{
+		margin: 0 auto;
+		width: auto;
+		font-size: 10px;
+	}
+	#Banners a{
+		font-size: 10px;
+	}
+	#Banners .banner_4 h5{
+		font-size: 30px;
+	}
+	#Banners .banner_3{
+		margin: 10px auto;
+	}
+	#Banners .banner_2{
+		margin: 0 auto;
+	}
+	#Banners .banner_2 h5{
+		font-size: 27px;
+	}
+	#Banners .banner_2 p{
+		padding: 0 40px;
+	}
+	#Banners .banner_2 h5{
+		padding: 30px 40px 0;
+	}
+	#Banners .banner_1{
+		margin: 0 auto 10px;
+	}
+	#Banners .banner_1 .text h3{
+		font-size: 18px;
+		padding: 0 0;
+	}
+	#Banners .banner_1 .text{
+		padding: 5px 5px;
+		left: 25%;
+		right: 25%;
+	}
+	#topCarousel .controlButton{
+		padding: 30px 15px 30px 30px;
+		background-color: #fff;
+	}
+	#topCarousel .scrollDown img{
+		width: 15px;
+	}
+	#topCarousel .scrollDown p{
+		padding: 0 10px;
+	}
+	#topCarousel .scrollDown a{
+		font-size: 10px;
+	}
+	#topCarousel .scrollDown a img{
+		width: 10px;
+	    height: 10px;
+	    margin: 13px 6px;
+	    transform: rotate(90deg);
+	}
+	#topCarousel .textSlider{
+		position: absolute;
+	    top: 2em;
+	    left: 3em;
+	    text-align: center;
+	    background-color: #fff;
+	    width: auto;
+	    right: 3em;
+	    padding: 4px 10px; 
+	}
+	#topCarousel .textSlider h4{
+		font-size: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	#topCarousel .textSlider p{
+		width: auto;
+		font-size: 6px;
+	}
+	#topCarousel .textSlider span{
+		width: auto;
+		font-size: 7px;
+		line-height: 3px;
+	}
+	#topCarousel .textSlider p{
+		line-height: 15px;
+	}
+	#topCarousel .textSlider button{
+		width: 60px;
+	    height: 16px;
+	    border: none;
+	    font-size: 10px;
+	    margin: 10px auto;
+	}
+	.controlButton .indicators{
+		padding: 10px 11px;
+	    position: relative;
+	    text-align: center;
+	}
+	.menuLeft li:nth-child(n+2){
+		padding: 0 9px;
+		border-left: 1px solid #f1f3f3; 
+	}
+	.contactsRight{
+		text-align: center;
+		margin: 10px 0;
+	}
+	.purchases{
+		width: 200px;
+	}
+	.basket:hover .purchases{
+		opacity: 1;
+		top: 61px;
+		right: auto;
+	}
+	.button{
+		text-align: center;
+	}
+	footer .features div{
+		border-right: none;
+		border-bottom: 1px solid #efefef;
+	}
+	footer .features div:nth-child(4){
+		border-right:none;
+		border-bottom:none;
+	}
+	.menuLeft{
+		text-align: center;
+	}
+	#menu input:focus {
+  		width: 170px;
+  		z-index: 1;
+ 		background-color: #edefef;
+ 		box-shadow: 0px 1px 1px 0px #d7dbdc;
+	}
+	a{
+		font-size: 10px;
+	}
+	#contacts .menuLeft{
+		text-align: center;
+	}
+	#contacts .contactsRight{
+		text-align: center;
+		margin-top: 5px;
+	}
+	.menuLeft li:first-child{
+		padding: 0 10px; 
+	}
+	.menuLeft li:nth-child(n+2){
+		padding: 0 10px;
+	}
+	.topMenu{
+		display: none;
+	}
+	.burger-menu{
+		display: block;
+		position: relative;
+		text-align: right;
+	}
+	.button{
+		text-align: center;
+		margin-top: 20px;
+	}
+	#menu .purchases{
+    	width: auto;
+	}
+	#contact .mainFoto{
+		width: 100%;
+	}
+		#btn-menu + label{
+    	display: inline-block;	
+	}
+	#btn-menu + label + .list-menu{
+    	display: none;
+	}
+	#btn-menu:checked + label + .list-menu{
+    	display: block;
+	}
+	#contacts a{
+		color: #a8a8a8;
+		text-decoration:none;
+		font-size: 10px;
+	}	
+	#contacts .contactsRight li:first-child{
+	border-right: 1px solid #efefef;
+	padding-right: 9px;
+	}
+	footer .features div{
+		border-right: none;
+		border-bottom: 1px solid #efefef;
+	}
+	footer .informahion ul{
+		text-align: center;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	#wrapper{
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+	}
+	.menuLeft li:nth-child(n+2){
+		padding: 0 9px;
+		border-left: 1px solid #f1f3f3; 
+	}
+	.menuLeft li:first-child{
+		padding: 0 10px; 
+	}
+	.button{
+		text-align: center;
+		margin-top: 20px;
+	}
+	.contactsRight{
+		text-align: center;
+		margin: 10px 0;
+	}
+	#contacts a{
+		color: #a8a8a8;
+		text-decoration:none;
+		font-size: 10px;
+	}	
+	#contacts .contactsRight li:first-child{
+		border-right: 1px solid #efefef;
+		padding-right: 9px;
+	}
+	#contacts .menuLeft{
+		text-align: center;
+	}
+	#contacts .contactsRight{
+		text-align: center;
+		margin-top: 5px;
+	}
+	.purchases{
+		width: 200px;
+	}
+	.basket:hover .purchases{
+		opacity: 1;
+		top: 61px;
+		right: auto;
+	}
+	.controlButton .indicators{
+		padding: 10px 11px;
+	    position: relative;
+	    text-align: center;
+	}
+
+	footer .informahion h5{
+		margin-top: 20px;
+	}
+	footer .features div{
+		border-right: none;
+		border-bottom: 1px solid #efefef;
+	}
+	footer .features div:nth-child(4){
+		border-right:none;
+		border-bottom:none;
+	}
+	footer .features div{
+		border-right: none;
+		border-bottom: 1px solid #efefef;
+	}
+	footer .informahion ul{
+		text-align: center;
+	}
+	#menu input:focus {
+  		width: 170px;
+  		z-index: 1;
+ 		background-color: #edefef;
+ 		box-shadow: 0px 1px 1px 0px #d7dbdc;
+	}
+	a{
+		font-size: 10px;
+	}
+	#NewProduct .productsBox {
+		margin: 5px 0;
+	}
+	#NewProduct{
+		padding-bottom: 20px;
+	}
+	#NewProduct h2{
+		padding: 20px;
+	}
+	#Sale h2{
+		font-size: 20px;
+		line-height: 48px;
+		padding: 0;
+	}
+	#Sale p{
+		font-size: 10px;
+	}
+	#Sale button{
+		margin: 20px auto;
+	}
+	#Sale .sale-out{
+		background-size: contain;
+	}
+	#Sale .dishes{
+		top: 0; 
+	    width: 100%;
+	}
+	#Sale .sale-out .roundeds{
+		height: 13px;
+	    width: 100%;
+	    margin-top: -75px;
+	}
+	#Banners .banner_5{
+		width: 260px;
+		height: 310px; 
+		background-color: #fff; 
+		margin: 10px auto;
+		padding: 5px;
+		position: relative;
+	}
+	#Banners .banner_4 p{
+		margin: 0 auto;
+		width: auto;
+		font-size: 10px;
+	}
+	#Banners a{
+		font-size: 10px;
+	}
+	#Banners .banner_4 h5{
+		font-size: 30px;
+	}
+	#Banners .banner_3{
+		margin: 10px auto;
+	}
+	#Banners .banner_2{
+		margin: 0 auto;
+	}
+	#Banners .banner_2 h5{
+		font-size: 27px;
+	}
+	#Banners .banner_2 p{
+		padding: 0 40px;
+	}
+	#Banners .banner_2 h5{
+		padding: 30px 40px 0;
+	}
+	#Banners .banner_1{
+		margin: 0 auto 10px;
+	}
+	#Banners .banner_1 .text h3{
+		font-size: 18px;
+		padding: 0 0;
+	}
+	#Banners .banner_1 .text{
+		padding: 5px 5px;
+		left: 25%;
+		right: 25%;
+	}
+	#topCarousel .controlButton{
+		padding: 30px 15px 30px 30px;
+		background-color: #fff;
+	}
+	#topCarousel .scrollDown img{
+		width: 15px;
+	}
+	#topCarousel .scrollDown p{
+		padding: 0 10px;
+	}
+	#topCarousel .scrollDown a{
+		font-size: 10px;
+	}
+	#topCarousel .scrollDown a img{
+		width: 10px;
+	    height: 10px;
+	    margin: 13px 6px;
+	    transform: rotate(90deg);
+	}
+	#topCarousel .textSlider{
+		position: absolute;
+	    top: 2em;
+	    left: 3em;
+	    text-align: center;
+	    background-color: #fff;
+	    width: auto;
+	    right: 3em;
+	    padding: 4px 10px; 
+	}
+	#topCarousel .textSlider h4{
+		font-size: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	#topCarousel .textSlider p{
+		width: auto;
+		font-size: 6px;
+	}
+	#topCarousel .textSlider span{
+		width: auto;
+		font-size: 7px;
+		line-height: 3px;
+	}
+	#topCarousel .textSlider p{
+		line-height: 15px;
+	}
+	#topCarousel .textSlider button{
+		width: 60px;
+	    height: 16px;
+	    border: none;
+	    font-size: 10px;
+	    margin: 10px auto;
+	}
+	.topMenu{
+		display: none;
+	}
+	.burger-menu{
+		display: block;
+		position: relative;
+		text-align: right;
+	}
+		#btn-menu + label{
+    	display: inline-block;	
+	}
+	#btn-menu + label + .list-menu{
+    	display: none;
+	}
+	#btn-menu:checked + label + .list-menu{
+    	display: block;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1139px) {
+	#wrapper{
+		width: 100%;
+		padding: 0;
+	}
+	.menuLeft li:nth-child(n+2){
+		padding: 0 9px;
+		border-left: 1px solid #f1f3f3; 
+	}
+	#contacts .contactsRight li:first-child{
+		border-right: 1px solid #efefef;
+		padding: 0 10px;
+	}
+	#contacts .menuLeft{
+		text-align: left;
+	}
+	#contacts .contactsRight{
+		text-align: right;
+		margin-top: 0px;
+	}
+	#contacts a{
+		color: #a8a8a8;
+		text-decoration:none;
+		font-size: 14px;
+	}
+	footer .features div{
+		border-right: 1px solid #efefef;
+		border-bottom: none;
+	}
+	footer .features div:nth-child(4){
+		border-right:none;
+		border-bottom:none;
+	}
+	footer .informahion ul{
+		text-align: center;
+	}
+	footer .informahion .back{
+		margin: 5px 9px auto 0;
+	}
+	.purchases{
+		width: 200px;
+	}
+	.basket:hover .purchases{
+		opacity: 1;
+		top: 61px;
+		right: auto;
+	}
+	.button{
+		text-align: center;
+		margin-top: 20px;
+	}
+	#menu input:focus {
+  		width: 170px;
+  		z-index: 1;
+ 		background-color: #edefef;
+ 		box-shadow: 0px 1px 1px 0px #d7dbdc;
+	}
+	a{
+		font-size: 10px;
+	}
+	.topMenu{
+		display: none;
+	}
+	.burger-menu{
+		display: block;
+		position: relative;
+		text-align: right;
+	}
+	#btn-menu + label{
+    	display: inline-block;	
+	}
+	#btn-menu + label + .list-menu{
+    	display: none;
+	}
+	#btn-menu:checked + label + .list-menu{
+    	display: block;
+	}
+	#Sale .sale-out .roundeds{
+		width: 100%;
+    }
+    #topCarousel .controlButton{
+		padding: 30px 30px;
+	}
+	.controlButton .indicators{
+		padding: 10px 20px;
+   	}
+   	#Banners .banner_1{
+		margin: 0 auto 10px auto;
+	}
+	#Banners .banner_2{
+		margin: 0 auto;
+	}
+	#Banners .banner_3{
+		margin: 10px auto;
+	}
+	#Banners .banner_5{
+		margin: 10px auto;
+	}
+	#topCarousel .textSlider{
+		top: 25%;
+		left: 10em;
+		right: 10em;
+		width: auto; 
+		padding: 20px;
+	}
+	#topCarousel .textSlider h4{
+		width: auto;
+		margin-top: 40px;
+    	margin-bottom: 20px;
+	}
+	#topCarousel .textSlider span{
+		width: auto;
+		font-size: 17px;
+	}
+	#topCarousel .textSlider p{
+		width: auto;
+		font-size: 15px;
+	}
+	#topCarousel .textSlider button{
+		margin: 25px auto;
+	}
+}
+@media screen and (min-width: 1140px) and (max-width: 1366px){
+	#wrapper{
+		width: 100%;
+		padding: 0;
+	}
+	.menuLeft li:nth-child(n+2){
+		padding: 0 9px;
+		border-left: 1px solid #f1f3f3; 
+	}
+	#contacts .contactsRight li:first-child{
+		border-right: 1px solid #efefef;
+		padding: 0 10px;
+	}
+	#contacts .menuLeft{
+		text-align: left;
+	}
+	#contacts .contactsRight{
+		text-align: right;
+		margin-top: 0px;
+	}
+	#contacts a{
+		color: #a8a8a8;
+		text-decoration:none;
+		font-size: 14px;
+	}
+	footer .features div{
+		border-right: 1px solid #efefef;
+		border-bottom: none;
+	}
+	footer .features div:nth-child(4){
+		border-right:none;
+		border-bottom:none;
+	}
+	footer .informahion ul{
+		text-align: center;
+	}
+	footer .informahion .back{
+		margin: 5px 9px auto 0;
+	}
+	.purchases{
+		width: 200px;
+	}
+	.basket:hover .purchases{
+		opacity: 1;
+		top: 61px;
+		right: auto;
+	}
+	.button{
+		text-align: center;
+		margin-top: 0;
+	}
+	#menu input:focus {
+  		width: 170px;
+  		z-index: 1;
+ 		background-color: #edefef;
+ 		box-shadow: 0px 1px 1px 0px #d7dbdc;
+	}
+	a{
+		font-size: 10px;
+	}
+	.topMenu{
+		display: none;
+	}
+	.burger-menu{
+		display: block;
+		position: relative;
+		text-align: right;
+	}
+	#btn-menu + label{
+    	display: inline-block;	
+	}
+	#btn-menu + label + .list-menu{
+    	display: none;
+	}
+	#btn-menu:checked + label + .list-menu{
+    	display: block;
+	}
+	#Sale .sale-out .roundeds{
+		width: 100%;
+    }
+    #topCarousel .controlButton{
+		padding: 30px 30px;
+	}
+	.controlButton .indicators{
+		padding: 10px 20px;
+   	}
+   	#Banners .banner_1{
+		margin: 0 auto 10px auto;
+	}
+	#Banners .banner_2{
+		margin: 0 auto;
+	}
+	#Banners .banner_3{
+		margin: 10px auto;
+	}
+	#Banners .banner_5{
+		margin: 10px auto;
+	}
+	#topCarousel .textSlider{
+		top: 25%;
+		left: 10em;
+		right: 10em;
+		width: auto; 
+		padding: 20px;
+	}
+	#topCarousel .textSlider h4{
+		width: auto;
+		margin-top: 40px;
+    	margin-bottom: 20px;
+	}
+	#topCarousel .textSlider span{
+		width: auto;
+		font-size: 17px;
+	}
+	#topCarousel .textSlider p{
+		width: auto;
+		font-size: 15px;
+	}
+	#topCarousel .textSlider button{
+		margin: 25px auto;
+	}	
+}
+@media screen and (min-width: 1367px) and (max-width: 1880px){  
+	#topCarousel .controlButton{
+		padding: 30px 30px;
+	}
+	#topCarousel .textSlider{
+		top: 10%;
+		left: 20em;
+		right: 20em;
+		width: auto;
+	}
+} 
+@media screen and (min-width: 320px) and (max-width: 390px){  
+	#Sale .sale-out .roundeds{
+		margin-top: -137px;
+		height: 15px;
+	}
+}
+@media screen and (min-width: 391px) and (max-width: 439px){  
+	#Sale .sale-out .roundeds{
+		margin-top: -127px;
+		height: 15px;
+	}
+}
+@media screen and (min-width: 440px) and (max-width: 560px){  
+	#Sale .sale-out .roundeds{
+		margin-top: -111px;
+		height: 15px;
+	}
+}
+	
+
+body {
+    margin-top: 50px;
+}
+
+.carousel-showmanymoveone .carousel-control {
+  width: 4%;
+  background-image: none;
+}
+.carousel-showmanymoveone .carousel-control.left {
+  margin-left: 15px;
+}
+.carousel-showmanymoveone .carousel-control.right {
+  margin-right: 15px;
+}
+.carousel-showmanymoveone .cloneditem-1,
+.carousel-showmanymoveone .cloneditem-2,
+.carousel-showmanymoveone .cloneditem-3 {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  .carousel-showmanymoveone .carousel-inner > .active.left,
+  .carousel-showmanymoveone .carousel-inner > .prev {
+    left: -50%;
+  }
+  .carousel-showmanymoveone .carousel-inner > .active.right,
+  .carousel-showmanymoveone .carousel-inner > .next {
+    left: 50%;
+  }
+  .carousel-showmanymoveone .carousel-inner > .left,
+  .carousel-showmanymoveone .carousel-inner > .prev.right,
+  .carousel-showmanymoveone .carousel-inner > .active {
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner .cloneditem-1 {
+    display: block;
+  }
+}
+@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
+  .carousel-showmanymoveone .carousel-inner > .item.active.right,
+  .carousel-showmanymoveone .carousel-inner > .item.next {
+    -webkit-transform: translate3d(50%, 0, 0);
+            transform: translate3d(50%, 0, 0);
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner > .item.active.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner > .item.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev.right,
+  .carousel-showmanymoveone .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+@media all and (min-width: 992px) {
+  .carousel-showmanymoveone .carousel-inner > .active.left,
+  .carousel-showmanymoveone .carousel-inner > .prev {
+    left: -25%;
+  }
+  .carousel-showmanymoveone .carousel-inner > .active.right,
+  .carousel-showmanymoveone .carousel-inner > .next {
+    left: 25%;
+  }
+  .carousel-showmanymoveone .carousel-inner > .left,
+  .carousel-showmanymoveone .carousel-inner > .prev.right,
+  .carousel-showmanymoveone .carousel-inner > .active {
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner .cloneditem-2,
+  .carousel-showmanymoveone .carousel-inner .cloneditem-3 {
+    display: block;
+  }
+}
+@media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
+  .carousel-showmanymoveone .carousel-inner > .item.active.right,
+  .carousel-showmanymoveone .carousel-inner > .item.next {
+    -webkit-transform: translate3d(25%, 0, 0);
+            transform: translate3d(25%, 0, 0);
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner > .item.active.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-25%, 0, 0);
+            transform: translate3d(-25%, 0, 0);
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner > .item.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev.right,
+  .carousel-showmanymoveone .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
