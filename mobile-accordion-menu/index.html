@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Accordion Mobile Navigation</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+  <div class="header">
+    <div class="menu-icon" data-behaviour="toggle-menu-icon">
+      <span class="menu-icon__bar">
+    </div>
+  </div>
+  <nav class="nav" data-element="toggle-nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link" href="#">Menu item One</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link nav__link--plus" data-behaviour="toggle-link-icon" href="#">Menu item Two</a>
+        <ul class="nav__sub-list" data-behaviour="toggle-sub-menu">
+          <li class="nav__sub-item">
+            <a class="nav__link"  href="#">Sub Menu item one</a>
+          </li>
+          <li class="nav__sub-item">
+            <a class="nav__link" href="#">Sub Menu item two</a>
+          </li>
+          <li class="nav__sub-item">
+            <a class="nav__link" href="#">Sub Menu item three</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Menu item Three</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Menu item Four</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://use.fontawesome.com/c7e893829f.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
