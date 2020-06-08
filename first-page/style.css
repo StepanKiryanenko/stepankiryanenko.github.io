@@ -1,0 +1,327 @@
+ main h2 {
+    color: #00acec;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ section, article {
+     border-bottom: 2px solid #dcdcdd;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     padding-left: 30px;
+
+ }
+
+ .container {
+     padding-bottom: 30px;
+ }
+
+ .subtitle {
+    font-size: 15px;
+    font-family: Montserrat 600;
+    font-weight: bold;
+}
+
+header {
+   background-color: #434244;
+}
+
+header .block {
+    padding-top: 220px;
+    padding-bottom: 60px;
+    text-align: center;
+
+}
+
+ header .about-name {
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+header .about-position {
+    font-size: 20px;
+    letter-spacing: 0.25em;
+    color: #939497;
+    
+}
+
+aside {
+    padding-top: 150px;
+    border-right: 2px solid #dcdcdd;
+}
+
+aside .icon {
+  padding-bottom: 15px;
+}
+
+aside .contact {
+    padding-bottom: 20px;
+}
+
+aside .information-contact {
+    padding-top: 16px;
+}
+
+aside .progressbar {
+    padding-top: 80px;
+}
+
+aside .row {
+    border-bottom: 2px solid #dcdcdd;  
+}
+
+aside .titleMarginTop {
+    padding-top: 15px;
+}
+
+aside ul  {
+    padding-left: 0;
+}
+
+aside li {
+    list-style-type: none;
+    padding-top: 10px;
+ }
+
+aside .circul {
+    position: absolute;
+    top: -150px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: #dcdcdd;
+}
+
+progress {
+    height: 8px;
+    background-color: #dcdcdd;
+    margin-bottom: 20px;
+}
+
+span  {
+    font-weight: bold;
+}
+
+article {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+article p {
+    margin-top: 30px;
+}
+
+#education .subtitle {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#experience .subtitle {
+    padding-top: 20px;
+}
+
+#experience .date {
+    text-align: right;
+}
+
+#reference .name {
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+body .border-none {
+    border-bottom: none;
+}
+
+li img {
+    width: 40px;
+}
+
+
+.titleMarginTop {
+    margin-top: 15px
+}
+.main-row {
+    display: flex;
+}
+@media screen and  (max-width: 1156px) {
+    /* Ipad Pro */
+    .main-row {
+        display:flex;
+    }
+
+    header .block {
+        padding-top: 180px;
+    }
+
+    aside {
+        padding-top: 120px;
+    }
+
+    aside .circul {
+        width: 280px;
+    }
+
+    .row progress {
+        max-width: 100%;
+    }
+
+    #experience .date {
+        padding-top: 16px;
+    }
+
+}
+@media screen and (max-width: 980px) {
+    /* Ipad */
+    .main-row {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    header .block {
+        padding-top: 150px;
+    }
+
+    aside .circul {
+        margin-top: 80px;
+        width: 230px;
+    }
+
+    aside .titleMarginTop {
+        padding-top: 25px;
+    }
+
+    aside .progressbar {
+        padding-top: 90px;
+    }
+
+    body .row {
+        display: flex;
+        flex-wrap: nowrap;
+        }
+
+    article {
+        padding-left: 0px;
+    }
+
+    #education {
+        padding-left: 0;
+    }
+
+    #experience {
+        padding-left: 0;
+    }
+
+    #experience .date {
+        padding-top: 20px;
+    }
+
+    #reference {
+        padding-left: 0;
+    }
+
+    .information-contact {
+        padding-right: 55px;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    /* Phone */
+    .main-row {
+    display: flex;
+    flex-direction: column;
+    }
+    
+header .block {
+        padding-top: 90px;
+    }
+
+    header .about-name {
+        font-size: 23px;
+    }
+
+    aside .circul {
+        width: 175px;
+        margin-top: 110px;
+    }
+
+    aside .information {
+        font-size: 13px;
+    }
+
+    aside .titleMarginTop {
+        font-size: 15px;
+    }
+
+    .progressbar progress {
+        margin-top: -5px;
+    }
+
+    article p {
+        font-size: 13px;
+    }
+
+    #education .subtitle {
+        font-size: 12px;
+    }
+
+    #education p {
+        font-size: 14px;
+    }
+
+    #experience p, .date{
+        font-size: 14px;
+    }
+
+    #experience .subtitle {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row progress {
+        width: 100%;
+    }
+
+    aside {
+        border: none;
+    }
+
+   body header .about-name {
+        font-size: 15px;
+    }
+
+   body header .about-position{
+        font-size: 15px;
+    }
+
+    header .block {
+        padding-top: 60px;
+    }
+
+    aside .circul {
+        width: 150px;
+    }
+
+   aside .titleMarginTop {
+        padding-top: 0;
+    }
+
+    article {
+        padding-top: 0;
+    }
+
+    #experience .date{
+        padding-right: 0;
+    }
+
+    #experience p {
+        text-align: justify;
+    }
+
+   aside .progressbar {
+        padding-top: 60px;
+    }
+}
+    
