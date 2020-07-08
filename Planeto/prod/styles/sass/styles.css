@@ -1,0 +1,597 @@
+@font-face {
+  font-family: 'font0e57303ba910378cb7f4288216ebb1b8';
+  src: url("https://nomail.com.ua/files/eot/0e57303ba910378cb7f4288216ebb1b8.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/0e57303ba910378cb7f4288216ebb1b8.woff") format("woff"), url("https://nomail.com.ua/files/woff2/0e57303ba910378cb7f4288216ebb1b8.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'Freehand575BT-RegularB';
+  src: local("Freehand575BT-RegularB"), url("https://nomail.com.ua/files/woff/0e57303ba910378cb7f4288216ebb1b8.woff") format("woff"); }
+
+html {
+  scroll-behavior: smooth; }
+
+.f-nav {
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; }
+
+#wrapper {
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+/*start header */
+header .bg-success {
+  background-color: #40b583 !important;
+  z-index: 10; }
+
+header nav {
+  height: 100px;
+  filter: drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.05));
+  background-color: #4ec391;
+  border: 1px solid rgba(255, 255, 255, 0.23); }
+  header nav .navbar-brand {
+    display: flex;
+    align-items: center; }
+    header nav .navbar-brand .logo {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.28));
+      border: 5px solid #ffffff; }
+      header nav .navbar-brand .logo .pixel {
+        width: 7px;
+        height: 7px;
+        border-radius: 3px;
+        filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.28));
+        background-color: #ffffff;
+        margin: 40% auto; }
+    header nav .navbar-brand h1 {
+      font-size: 36px;
+      line-height: 92px;
+      color: #ffffff;
+      font-weight: 700;
+      font-family: 'Dosis', sans-serif;
+      filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.28));
+      text-transform: uppercase;
+      margin: 0 0 0 15px; }
+  header nav .navbar-collapse {
+    justify-content: flex-end; }
+    header nav .navbar-collapse .navbar-nav {
+      align-items: center;
+      background-color: #40b583; }
+      header nav .navbar-collapse .navbar-nav .nav-item {
+        font-size: 16px;
+        line-height: 36px;
+        color: #ffffff !important;
+        font-weight: 700;
+        font-family: 'Dosis', sans-serif;
+        filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.28));
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative; }
+        header nav .navbar-collapse .navbar-nav .nav-item:after {
+          background-color: #ffffff;
+          display: block;
+          content: "";
+          height: 2px;
+          width: 0%;
+          left: 50%;
+          position: absolute;
+          -webkit-transition: width .3s ease-in-out;
+          -moz--transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          transform: translateX(-50%); }
+        header nav .navbar-collapse .navbar-nav .nav-item:hover:after {
+          width: 100%; }
+        header nav .navbar-collapse .navbar-nav .nav-item:focus:after {
+          width: 100%; }
+      header nav .navbar-collapse .navbar-nav .ellipse_element {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        position: relative;
+        margin: 0 20px; }
+        header nav .navbar-collapse .navbar-nav .ellipse_element .pixel {
+          width: 2px;
+          height: 2px;
+          border-radius: 50%;
+          background-color: #ffffff;
+          margin: 40% auto; }
+
+/* Start footer */
+footer {
+  padding: 15px 0; }
+  footer .to_top {
+    text-align: right; }
+    footer .to_top a {
+      font-size: 14px;
+      line-height: 36px;
+      color: #282828;
+      font-weight: 700;
+      font-family: 'Dosis', sans-serif;
+      text-transform: uppercase; }
+  footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    footer .copyright p {
+      font-size: 14px;
+      line-height: 36px;
+      color: #282828;
+      font-weight: 700;
+      font-family: 'Dosis', sans-serif;
+      margin: 0 0 0 10px; }
+  footer .social-item {
+    display: flex;
+    text-align: left; }
+    footer .social-item a {
+      margin: 0 25px 0 0; }
+      footer .social-item a:hover {
+        text-decoration: none; }
+      footer .social-item a .icon {
+        width: 30px;
+        height: 30px;
+        border: 2px solid #bcbcc4;
+        border-radius: 50%;
+        text-align: center;
+        padding: 5px;
+        color: #bcbcc4; }
+        footer .social-item a .icon:hover {
+          color: #fddf16;
+          border: 2px solid #fddf16; }
+
+main #slider .carousel-indicators {
+  bottom: -70px;
+  z-index: 9; }
+  main #slider .carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #515553;
+    margin: 0 15px; }
+
+main #slider .carousel-inner .carousel-item .carousel-caption {
+  top: 15%;
+  right: 10%;
+  left: 10%;
+  z-index: 9; }
+  main #slider .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 48px;
+    letter-spacing: 5px;
+    line-height: 48px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.28));
+    text-transform: uppercase; }
+
+main #blog {
+  margin-top: 150px; }
+  main #blog .card-plain {
+    margin-bottom: 50px; }
+  main #blog .card-info h3 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    color: #282828;
+    font-weight: 300;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase; }
+    main #blog .card-info h3 a {
+      color: #282828; }
+  main #blog .card-info p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #5e5e5e;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif; }
+  main #blog .card-info a .button-wrapp {
+    width: 140px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid #282828;
+    padding: 0 0 0 0;
+    font-size: 16px;
+    line-height: 35px;
+    color: #414141;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase; }
+    main #blog .card-info a .button-wrapp:hover {
+      border: 2px solid #fddf16;
+      color: #ffffff;
+      background-color: #fddf16; }
+
+main #number {
+  background-color: #45b887;
+  padding: 30px 0 40px 0; }
+  main #number p {
+    font-size: 48px;
+    line-height: 78px;
+    color: #ffffff;
+    font-family: 'Freehand575BT-RegularB';
+    text-align: center;
+    filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.28)); }
+  main #number .index {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main #number .index .number p {
+      font-size: 60px;
+      line-height: 30px;
+      color: #ffffff;
+      font-weight: 200;
+      font-family: 'Dosis', sans-serif;
+      filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.28)); }
+    main #number .index .text p {
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: 'Dosis', sans-serif;
+      filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.28));
+      margin-left: 5px;
+      width: 120%; }
+  main #number .ellipse_element {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    position: relative;
+    margin: 0 15px; }
+    main #number .ellipse_element .pixel {
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      margin: 35% auto; }
+
+main #tabs .empty {
+  height: 50px; }
+
+main #tabs h3 {
+  font-size: 36px;
+  letter-spacing: 4px;
+  line-height: 48px;
+  color: #282828;
+  font-weight: 400;
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase; }
+
+main #tabs .nav-tabs {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: none; }
+  main #tabs .nav-tabs .nav-item {
+    margin-bottom: 0;
+    margin-right: 20px; }
+    main #tabs .nav-tabs .nav-item .nav-link {
+      width: 56px;
+      font-size: 14px;
+      line-height: 15px;
+      color: #414141;
+      font-weight: 700;
+      font-family: 'Dosis', sans-serif;
+      padding: 5px 10px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border: 2px solid #282828;
+      border-radius: 5px;
+      text-align: center; }
+    main #tabs .nav-tabs .nav-item .active {
+      background-color: #282828;
+      color: #ffffff; }
+
+main #tabs .tab-content {
+  width: 100%;
+  margin: 50px 0 40px 0; }
+  main #tabs .tab-content .tab-pane .fotosProducts {
+    background-color: #dfdfdf;
+    width: 100%;
+    height: 240px;
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    padding: 50%; }
+
+main #tabs a .button-wrapp {
+  display: block;
+  text-align: center;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  border: 2px solid #282828;
+  margin: 0 0 50px 0;
+  font-size: 16px;
+  color: #414141;
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif; }
+  main #tabs a .button-wrapp:hover {
+    border: 2px solid #fddf16;
+    background-color: #fddf16;
+    color: #ffffff; }
+
+main #adress .content {
+  padding: 35px 0;
+  border-top: 2px solid #e8e8e8;
+  border-bottom: 2px solid #e8e8e8; }
+  main #adress .content .logo-footer {
+    display: flex;
+    align-items: center; }
+    main #adress .content .logo-footer .ellipse_element {
+      width: 35px;
+      height: 35px;
+      border-radius: 17px;
+      border: 5px solid #282828; }
+      main #adress .content .logo-footer .ellipse_element .pixel {
+        width: 7px;
+        height: 7px;
+        border-radius: 3px;
+        background-color: #282828;
+        margin: 35% auto; }
+    main #adress .content .logo-footer .logo-title {
+      font-size: 36px;
+      line-height: 92px;
+      color: #282828;
+      font-weight: 700;
+      font-family: 'Dosis', sans-serif;
+      text-transform: uppercase;
+      margin-left: 20px; }
+  main #adress .content .quick {
+    font-size: 18px;
+    line-height: 24px;
+    color: #282828;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    padding: 15px 0 0 0px; }
+  main #adress .content .text .info-footet p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #282828;
+    font-weight: 300;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif; }
+  main #adress .content .text .contact p {
+    font-size: 24px;
+    line-height: 40px;
+    color: #282828;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    margin-bottom: 0; }
+
+main #partners {
+  padding: 80px 0; }
+  main #partners h3 {
+    font-size: 36px;
+    letter-spacing: 4px;
+    line-height: 48px;
+    color: #282828;
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase; }
+  main #partners p {
+    font-size: 12px;
+    line-height: 24px;
+    color: #c9c9c9;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif; }
+  main #partners .button a {
+    width: 36px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #282828; }
+    main #partners .button a img {
+      margin: -5px 0 0 0; }
+  main #partners .carousel {
+    width: 100%; }
+    main #partners .carousel .partner {
+      height: 230px;
+      width: 100%;
+      text-align: center;
+      margin: 20px auto;
+      position: relative; }
+      main #partners .carousel .partner .info-partners {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        background-color: #fafafa;
+        padding: 5px;
+        display: none; }
+        main #partners .carousel .partner .info-partners p {
+          text-align: justify;
+          padding: 15px 60px 0;
+          font-size: 14px;
+          margin-bottom: 0;
+          line-height: 18px;
+          color: #414141;
+          font-weight: 400;
+          font-style: italic;
+          font-family: 'Open Sans', sans-serif; }
+      main #partners .carousel .partner .autor {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal !important;
+        padding: 15px 60px; }
+      main #partners .carousel .partner:hover .info-partners {
+        display: block; }
+
+@media screen and (max-width: 767px) {
+  header nav h1 {
+    font-size: 30px; }
+  footer {
+    padding: 15px 0; }
+    footer .to_top {
+      text-align: center; }
+    footer .copyright {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+    footer .social-item {
+      display: flex;
+      text-align: left;
+      justify-content: center; }
+  main #slider .carousel-indicators {
+    bottom: -70px; }
+    main #slider .carousel-indicators li {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #515553;
+      margin: 0 15px; }
+  main #slider .carousel-inner .carousel-item {
+    height: 160px; }
+    main #slider .carousel-inner .carousel-item .active {
+      height: 160px; }
+    main #slider .carousel-inner .carousel-item .w-100 {
+      height: 160px; }
+    main #slider .carousel-inner .carousel-item .carousel-caption {
+      top: 5%;
+      right: 5%;
+      left: 5%; }
+      main #slider .carousel-inner .carousel-item .carousel-caption h5 {
+        font-size: 24px;
+        line-height: 24px; }
+  main #blog {
+    margin-top: 70px; }
+    main #blog .card-plain {
+      margin-bottom: 25px; }
+    main #blog .card-header-image img {
+      width: 100%;
+      margin: 20px 0; }
+    main #blog .card-info h3 {
+      font-size: 24px;
+      width: 100%;
+      text-align: center; }
+    main #blog .card-info p {
+      font-size: 14px;
+      text-align: justify; }
+    main #blog .card-info a .button-wrapp {
+      width: 100%;
+      font-size: 14px; }
+  main #number {
+    padding: 15px 0; }
+    main #number p {
+      font-size: 18px;
+      line-height: 40px; }
+    main #number .index {
+      justify-content: flex-start; }
+      main #number .index .number p {
+        font-size: 45px; }
+      main #number .index .text p {
+        font-size: 20px;
+        width: 100%; }
+    main #number .ellipse_element .pixel {
+      margin: 40% auto; }
+  main #tabs .empty {
+    display: none; }
+  main #tabs h3 {
+    width: 100%;
+    font-size: 24px;
+    text-align: center; }
+  main #tabs .nav-tabs {
+    display: flex;
+    justify-content: center; }
+    main #tabs .nav-tabs .nav-item {
+      margin-right: 2px; }
+  main #tabs .tab-content {
+    width: 100%;
+    margin: 20px 0; }
+    main #tabs .tab-content .tab-pane .fotosProducts {
+      width: 100%;
+      margin-bottom: 20px; }
+  main #tabs a {
+    width: 100%; }
+    main #tabs a .button-wrapp {
+      margin: 0 0 20px 0; }
+  main #adress .content {
+    padding: 15px 0; }
+    main #adress .content .logo-footer {
+      justify-content: center; }
+    main #adress .content .quick {
+      text-align: center;
+      margin: 0 0 5px 0; }
+    main #adress .content .text .info-footet p {
+      text-align: justify;
+      margin: 0 0 10px 0; }
+    main #adress .content .text .contact p {
+      font-size: 18px;
+      text-align: center; }
+  main #partners {
+    padding: 20px 0; }
+    main #partners h3 {
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center; }
+    main #partners p {
+      text-align: center; }
+    main #partners .button a {
+      width: 90px; }
+    main #partners .carousel {
+      margin: 50px 0 0 0; }
+      main #partners .carousel .partner {
+        height: 150px;
+        margin: 5px auto; }
+        main #partners .carousel .partner .info-partners p {
+          padding: 10px 10px;
+          font-size: 12px; }
+    main #partners .carousel-control-prev {
+      left: 30px; }
+    main #partners .carousel-control-next {
+      right: 30px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  main #slider .carousel-indicators {
+    bottom: -70px; }
+    main #slider .carousel-indicators li {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #515553;
+      margin: 0 15px; }
+  main #slider .carousel-inner .carousel-item {
+    height: 160px; }
+    main #slider .carousel-inner .carousel-item .active {
+      height: 160px; }
+    main #slider .carousel-inner .carousel-item .w-100 {
+      height: 160px; }
+    main #slider .carousel-inner .carousel-item .carousel-caption {
+      top: 5%;
+      right: 5%;
+      left: 5%; }
+      main #slider .carousel-inner .carousel-item .carousel-caption h5 {
+        font-size: 24px;
+        line-height: 24px; }
+  main #tabs .empty {
+    display: none; }
+  main #tabs .nav-tabs .nav-item {
+    margin-right: 10px; }
+  main #number {
+    padding: 15px 0; }
+    main #number p {
+      font-size: 18px;
+      line-height: 40px; }
+    main #number .index {
+      justify-content: flex-start; }
+      main #number .index .number p {
+        font-size: 30px; }
+      main #number .index .text p {
+        font-size: 14px; }
+    main #number .ellipse_element {
+      margin: 0px; }
+      main #number .ellipse_element .pixel {
+        margin: 30% auto; } }
